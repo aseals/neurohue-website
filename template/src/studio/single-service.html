@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zxx" class="studio-agency dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Strategy — Dannel.studio</title>
+        <meta name="description" content="page description here">
+        <meta name="theme-color" content="#181818">
+
+        <!-- preload styles -->
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+
+        <!-- <link rel="preload" href="../assets/scss/theme/main.scss" as="style"> -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" as="style">
+
+        <!-- preload scripts -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="../assets/scss/theme/main.scss">
+
+        <!-- include scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script src="../assets/js/swiper-helper.js"></script>
+        <script src="../assets/js/uikit-components.js"></script>
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle>
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Video modal -->
+        <div id="uni-modal-media-video" data-uk-modal>
+            <div class="uk-modal-dialog uk-modal-video uk-width-2-3@m uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside uk-close" type="button">
+                    <i class="material-icons uk-icon-medium">close</i>
+                </button>
+                <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline data-uk-video></video>
+            </div>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport>
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center">
+                            <li><a href="works.html">work.</a></li>
+                            <li><a href="about.html">about.</a></li>
+                            <li><a href="mailto:hey@dannel.studio">contact.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrap: Studio Demo -->
+        <div class="wrap">
+
+            <!-- Hero -->
+            <div class="uni-studio-hero uk-panel uk-overflow-hidden">
+
+                <!-- Hero: Header -->
+                <header class="uni-studio-header uni-header">
+                    <div class="uni-header-navbar uk-sticky-transparent" data-uk-sticky="top: 120; animation: uk-animation-slide-top;">
+                        <div class="uk-container uk-container-expand">
+                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                                <div class="uk-navbar-top uk-flex-center">
+                                    <div class="uk-navbar-left">
+                                        <div class="uk-navbar-item">
+                                            <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">dannel.studio</a>
+                                            <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">D.</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-navbar-right uk-flex-right">
+                                        <div class="uk-navbar-item">
+                                            <a class="uni-menu-trigger" href="#uni-menu-modal" aria-label="Menu" data-uk-toggle></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <!-- Single service -->
+            <article class="uni-article uni-single-service uk-section-large uk-section-2xlarge@m uk-padding-remove-top@m">
+                <div class="uk-container">
+
+                    <!-- Hero: Content -->
+
+                    <div class="uk-panel uk-overflow-hidden">
+                        <canvas class="uk-visible@m" width="1200" height="640"></canvas>
+                        <canvas class="uk-hidden@m" width="576" height="610"></canvas>
+                        <img class="uk-cover" src="../assets/images/heros/studio-hero.jpg" alt="image" data-uk-cover loading="lazy">
+                    </div>
+
+                    <div class="uk-margin-large-top uk-margin-2xlarge-top@m">
+                        <div class="uk-container uk-container-small">
+                            <h2 class="uk-h3 uk-h1@m uk-margin-remove dark:uk-text-gray-10">Digital Strategy</h2>
+                            <p class="uk-text-large@m uk-margin-xlarge-top@m">Instead we dive deep to find the ideas, values, and people that make your business different, then transform those facts into an enthralling story. Using compelling content, engaged communities, fresh graphics, and a clear and captivating message, we turn the tide in your favor.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">01. What is Digital Strategy?</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">02. What you get with us?</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">03. Brand Architecture</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">04. Brand Vision &amp; Strategic Planning</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h3@m uk-margin-xlarge-top@m">05. Brand Positioning</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+
+                            <div class="uk-panel uk-margin-xlarge-top uk-margin-2xlarge-top@m">
+                                <ul class="uk-subnav">
+                                    <li>Share:</li>
+                                    <li>
+                                        <a href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Funistudio.co%2Fhtml%2Fdannel%2Fstudio%2Fsingle-service.html"
+                                            ><i class="brand-facebook uk-icon-small"><span class="sr-only">Facebook Icon</span></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/share?url=https%3A%2F%2Funistudio.co%2Fhtml%2Fdannel%2Fstudio%2Fsingle-service.html&text=Digital+Strategy"
+                                            ><i class="brand-twitter uk-icon-small"><span class="sr-only">Twitter Icon</span></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://pinterest.com/pin/create/bookmarklet/?&url=https%3A%2F%2Funistudio.co%2Fhtml%2Fdannel%2Fstudio%2Fsingle-service.html&description=Digital+Strategy"
+                                            ><i class="brand-pinterest uk-icon-small"><span class="sr-only">Pinterest Icon</span></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cta / Footer -->
+            <footer class="uni-studio-footer uk-background-gray-10 dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-section-medium uk-section-2xlarge@m uk-flex-column uk-flex-between uk-height-1-1 dark:uk-background-gray-100">
+                        <div>
+                            <div class="uk-width-large@m dark:uk-text-gray-10">
+                                <h2 class="uk-h1 uk-heading-hero@m dark:uk-text-gray-10">Let’s talk.</h2>
+                                <div class="uk-margin-medium-top@m">
+                                    <a href="mailto:hey@dannel.studio" class="uk-link-expand uk-link-underline uk-text-large@m">
+                                        <i class="material-icons-round">arrow_forward</i>
+                                        <span>hey@dannel.studio</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                            <div class="uk-grid uk-grid-match uk-grid-medium uk-flex-between" data-uk-grid>
+                                <div class="uk-width-4-10@m">
+                                    <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-whild-width-1-2@m uk-flex-between" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="works.html">
+                                                        <span>Works</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html#capabilities">
+                                                        <span>Services</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html">
+                                                        <span>About</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="uk-flex-right@m">
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://dribbble.com/unistudioco">
+                                                        <span>Dribbble</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://instagram.com/unistudioco">
+                                                        <span>Instagram</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://twitter.com/unistudioco">
+                                                        <span>Twitter</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1 uk-width-expand@m uk-flex-first@m">
+                                    <div class="uk-panel uk-height-1-1 uk-flex-column uk-flex-between uk-text-large@m dark:uk-text-gray-10">
+                                        <p class="uk-margin-remove">
+                                            Office 14 New Station St, <br>
+                                            Leeds, LS1 5DL
+                                        </p>
+                                        <p class="uk-margin-large-top">2021 © Dannel Studio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- include scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+        <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>

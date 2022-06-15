@@ -1,0 +1,137 @@
+@use "sass:map";
+
+/* UIKit: Form */
+.uk-form {
+    &-icon {
+        width: var(--sizes-form-medium-height);
+        background: none;
+        color: var(--color-gray-70);
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        &:not(.uk-form-icon-flip)~.uk-input {
+            padding-left: 50px !important;
+        }
+    }
+    &-label {
+        display: block;
+        font-size: var(--sizes-text-xsmall-size);
+        font-weight: 500;
+        color: inherit;
+        margin-bottom: 10px;
+    }
+}
+
+.uk-input,
+.uk-select:not([multiple]):not([size]),
+.uk-textarea,
+.uk-checkbox,
+.uk-radio {
+    font-family: var(--form-font-typeface);
+    color: var(--form-color-text);
+    background-color: var(--form-color-background);
+    border: var(--form-border-width) solid var(--form-border-color);
+    border-radius: var(--form-border-radius);
+    font-size: var(--sizes-form-medium-text);
+    &:not([type=checkbox]):not([type=radio]):not(:checked):not(:disabled):hover {
+        background-color: var(--form-color-background-hover);
+        border-color: var(--form-color-background-primary);
+    }
+    &:not(:checked):not(:disabled):focus {
+        border-color: var(--form-color-background-primary);
+    }
+    &:checked {
+        background-color: var(--form-color-background-primary);
+        &:not([type=checkbox]):not([type=radio]):hover,
+        &:focus {
+            background-color: var(--form-color-background-primary);
+        }
+    }
+    &:disabled {
+        background-color: var(--form-color-background-disable);
+    }
+    &::placeholder {
+        color: var(--form-color-placeholder);
+    }
+}
+
+.uk-input,
+.uk-select:not([multiple]):not([size]) {
+    height: var(--sizes-form-medium-height);
+    transition: unset;
+}
+
+.uk-checkbox,
+.uk-radio {
+    width: 20px;
+    height: 20px;
+    background: none;
+    margin-top: 0;
+    border: 2px solid var(--color-gray-30);
+}
+
+.uk-checkbox {
+    border-radius: calc(#{var(--form-border-radius)} / 2);
+    &:checked {
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.uk-radio {
+    border-radius: 50%;
+    &:checked {
+        background: transparent !important;
+        border: 6px solid var(--form-color-background-primary) !important;
+    }
+}
+
+// Color Modifier
+.uk-input,
+.uk-select {
+    @each $name, $color in map.get($config, 'colors', 'accent') {
+        &.uk-form-#{$name} {
+            border: 1px solid var(--colors-form-#{$name}) !important;
+            color: var(--colors-form-#{$name});
+        }
+    }
+}
+
+// Size Modifier
+@each $name, $size in map.get($config, 'sizes', 'form') {
+    @if $name != '' {
+        @include make-responsive('.uk-form-#{$name}') {
+            font-size: var(--sizes-form-#{$name}-text) !important;
+            height: var(--sizes-form-#{$name}-height) !important;
+        }
+    }
+}
+
+// Form Dark
+.uk-dark {
+    .uk-input,
+    &.uk-input,
+    .uk-select:not([multiple]):not([size]),
+    &.uk-select:not([multiple]):not([size]),
+    .uk-textarea,
+    &.uk-textarea,
+    .uk-checkbox,
+    &.uk-checkbox,
+    .uk-radio,
+    &.uk-radio {
+        background-color: rgba( 255 255 255 / 5%);
+        border-color: rgba( 255 255 255 / 10%);
+        color: rgba( 255 255 255 / 70%);
+        &:hover {
+            background-color: rgba( 255 255 255 / 5%) !important;
+            border-color: rgba( 255 255 255 / 20%) !important;
+        }
+        &:focus {
+            box-shadow: 0 0 0 3px rgba( 255 255 255 / 10%) !important;
+        }
+        &::placeholder {
+            color: rgba( 255 255 255 / 40%);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/* Import: Space Grotesk */
+@font-face {
+    font-family: "Space Grotesk";
+    src: local("Space Grotesk Regular"),
+         url('../fonts/space-grotesk/SpaceGrotesk-Regular.woff');
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: local("Space Grotesk Medium"),
+         url('../fonts/space-grotesk/SpaceGrotesk-Medium.woff');
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: local("Space Grotesk SemiBold"),
+         local("Space Grotesk Bold"),
+         url('../fonts/space-grotesk/SpaceGrotesk-Bold.woff');
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}

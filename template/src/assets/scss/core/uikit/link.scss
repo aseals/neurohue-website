@@ -1,0 +1,32 @@
+*[class*="uk-link"] {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none!important;
+    > i {
+        transition: transform 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    }
+    > *+* {
+        margin-left: var(--sizes-spacing-xsmall);
+    }
+    &.uk-link-expand {
+        &:hover > i {
+            transform: rotate(-45deg);
+        }
+    }
+    &.uk-link-back {
+        &:hover > i {
+            transform: rotate(-180deg);
+        }
+    }
+    &.uk-link-up {
+        &:hover > i {
+            transform: rotate(-90deg);
+        }
+    }
+    &.uk-link-down {
+        &:hover > i {
+            transform: rotate(90deg);
+        }
+    }
+}

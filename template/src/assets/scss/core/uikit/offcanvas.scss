@@ -1,0 +1,59 @@
+.uk-offcanvas {
+    &-close {
+        padding: 0;
+        width: 24px;
+        height: 24px;
+    }
+    &-bar {
+        &-panel {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -270px;
+            box-sizing: border-box;
+            width: 270px;
+            padding: 20px 20px;
+            background: #f8f8f8;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        &-animation {
+            transition: left 0.3s ease-out;
+        }
+        @media (min-width: 960px) {
+            &-panel {
+                left: -350px;
+                width: 350px;
+                padding: 40px 40px;
+            }
+        }
+    }
+    &-flip {
+        .uk-offcanvas-bar-panel {
+            left: auto;
+            right: -270px;
+        }
+        .uk-offcanvas-bar-animation {
+            transition-property: right;
+        }
+        .uk-open > .uk-offcanvas-bar-panel {
+            left: auto;
+            right: 0;
+        }
+        @media (min-width: 960px) {
+            .uk-offcanvas-bar-panel {
+                right: -350px;
+            }
+        }
+        .uk-offcanvas-reveal .uk-offcanvas-bar-panel {
+            left: auto;
+            right: 0;
+        }
+    }
+    &-reveal .uk-offcanvas-bar-panel {
+        left: 0;
+    }
+}
+.uk-open > .uk-offcanvas-bar-panel {
+    left: 0;
+}

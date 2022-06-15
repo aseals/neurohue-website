@@ -1,0 +1,72 @@
+// dark theme support
+.uk-dark {
+
+    // menu modal
+    #uni-menu-modal .uk-modal-dialog {
+        background-color: var(--color-gray-100) !important;
+        a {
+            color: var(--color-gray-10) !important;
+        }
+    }
+
+    // menu trigger icon
+    .uni-menu-trigger {
+        &::before,
+        &::after {
+            background-color: var(--color-gray-10);
+        }
+    }
+
+    // navbar
+    .uk-navbar-nav {
+        li {
+            > a::after {
+                background-color: var(--color-gray-10);
+            }
+        }
+    }
+
+    // card services
+    .uni-services-card {
+        .uk-button {
+            background-color: var(--color-gray-80) !important;
+            color: var(--color-gray-10) !important;
+        }
+        &:hover:not(.uk-active) {
+            .uk-button {
+                background-color: rgba(white, 0.2) !important;
+                color: var(--color-gray-10) !important;
+            }
+        }
+    }
+
+}
+
+// contrast
+.uni-header.uk-dark {
+
+    // header
+    .uni-header-navbar.uk-sticky.uk-active:not(.uk-sticky-transparent) {
+        background-color: var(--color-gray-100) !important;
+        *[class*=uk-link],
+        .uk-logo,
+        .uk-navbar-nav > li > a {
+            color: var(--color-gray-10) !important;
+        }
+    }
+
+    // menu modal
+    #uni-menu-modal .uk-modal-dialog {
+        background-color: var(--color-gray-100) !important;
+        a {
+            color: var(--color-gray-10) !important;
+        }
+    }
+
+    // sticky menu
+    .uni-menu-trigger::before,
+    .uni-menu-trigger::after {
+        background-color: var(--color-gray-10);
+    }
+
+}

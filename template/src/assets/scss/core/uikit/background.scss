@@ -1,0 +1,17 @@
+@use "sass:map";
+
+// Background
+
+.uk-background {
+
+    // Color modifier
+    @each $name, $color in map.get($config, 'colors', 'accent') {
+        &-#{$name} {
+            @if $name == 'muted' {
+                background-color: var(--color-gray-10);
+            } @else {
+                background-color: var(--color-#{$name});
+            }
+        }
+    }
+}

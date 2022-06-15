@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="uni-docs">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation — Dannel.</title>
+        <meta name="description" content="Dannel template, documentation.">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css">
+        <link rel="stylesheet" href="./assets/css/prettify.css">
+        <link rel="stylesheet" href="./assets/css/docs.css">
+
+        <!-- Scripts -->
+        <script src="./assets/js/page-revealer.js"></script>
+        <script src="./assets/js/prettify.js"></script>
+    </head>
+    <body>
+
+        <!-- Changelog modal -->
+        <div id="changelog" data-uk-modal="">
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" data-uk-close aria-label="Close"></button>
+                <h2 class="uk-modal-title uk-text-center uk-text-normal uk-margin-medium-bottom">Changelog</h2>
+                <div class="uk-text-small">
+                    <h3 class="uk-h5 uk-text-normal">1.2.0 (July 26, 2021)</h3>
+                    <ul class="uk-list uk-list-collapse uk-margin-top">
+                        <li><b>Added:</b> Freelancer demo single service template.</li>
+                        <li><b>Added:</b> Freelancer demo single post template.</li>
+                        <li><b>Added:</b> Freelancer demo terms and privacy page template.</li>
+                        <li><b>Added:</b> Minimal demo blog listing template.</li>
+                        <li><b>Added:</b> Minimal demo single project template.</li>
+                        <li><b>Added:</b> Minimal demo single post template.</li>
+                        <li><b>Added:</b> Minimal demo terms and privacy page template.</li>
+                        <li><b>Added:</b> Studio demo single service template.</li>
+                        <li><b>Added:</b> Studio demo single project template.</li>
+                        <li><b>Added:</b> Studio demo single post template.</li>
+                        <li><b>Added:</b> 404 page.</li>
+                        <li><b>Improved:</b> Some minor tweaks.</li>
+                    </ul>
+                    <h3 class="uk-h5 uk-text-normal uk-margin-medium-top">1.0.0 (July 22, 2021)</h3>
+                    <ul class="uk-list uk-margin-top">
+                        <li>Initial Release.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Site Wrapper -->
+        <div class="wrap">
+
+            <!-- Header -->
+            <header class="uk-header">
+                    <div class="uk-container">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-section-xsmall" data-uk-navbar="">
+                            <div class="uk-navbar-top uk-flex uk-flex-between uk-flex-middle uk-width-expand">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-h4 uk-margin-remove" href="index.html">Dannel Documentation</a>
+                                </div>
+                                <div class="uk-navbar-right uk-flex-right uk-visible@m">
+                                    <ul class="uk-subnav uk-text-semibold uk-margin-remove">
+                                        <li><a href="#changelog" data-uk-toggle="">Changelog.</a></li>
+                                        <li><a href="mailto:hi.unistudio@gmail.com">Submit a request.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+            </header>
+
+            <hr class="uk-margin-remove">
+
+            <!-- Container -->
+            <div class="uk-container">
+                <div class="uk-grid uk-grid-match uk-grid-divider uk-grid-3xlarge" data-uk-grid="">
+                    <div class="uk-width-1-4@l uk-visible@l">
+                        <div class="uk-margin-medium-top" data-uk-sticky="animation: uk-animation-fade; offset: 30;">
+                            <form class="uk-form-stacked uk-width-1-1 uk-visible@m" id="searchForm">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon uk-form-icon-flip">
+                                        <i data-uk-search-icon></i>
+                                    </span>
+                                    <input class="uk-input" type="text" placeholder="Search.." name="q">
+                                    <noscript>
+                                        <button type="submit">search</button>
+                                    </noscript>
+                                </div>
+                            </form>
+                            <ul class="uk-nav uk-nav-default scrollspy-nav uk-text-small uk-margin-medium-top" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 60">
+                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#installation">Installation</a></li>
+                                <li><a href="#folder-structure">Package contents</a></li>
+                                <li><a href="#markup">HTML Markup</a></li>
+                                <li><a href="#plugins">Plugins</a></li>
+                                <li><a href="#customize">Customizing CSS</a></li>
+                                <li><a href="#update">Updating template</a></li>
+                                <li class="uk-nav-divider uk-margin-small"></li>
+                                <li><a href="#" data-uk-toggle="target: #changelog">Changelog</a></li>
+                                <li><a href="mailto:hi.unistudio@gmail.com">Submit a request</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand uk-flex-first">
+                        <div class="uni-docs-container uk-panel uk-section">
+                            <h2 id="introduction" class="uk-h3 uk-margin-medium-bottom"># Introduction</h2>
+                            <p>Get familiar with the basic setup and overview of Dannel.</p>
+                            <p>A well crafted, creative, minimal and modern designed Digital &amp; Studio Agency Template. This Template is ideal for Digital Agencies, Studios, Freelancers, Startup Companies and Large Corporations.</p>
+                            <p>It has unique layout and features. It’s design is up to modern design trends.</p>
+                            <p class="uk-text-meta uk-margin-large-top">Current version: 1.2.0</p>
+                            <hr class="uk-margin-large">
+                            <h2 id="installation" class="uk-h3 uk-margin-medium-bottom"># Installation</h2>
+                            <p>Unzip the template package to any folder and open a command line at that location.</p>
+                            <p>Dannel's dev tools require <a href="https://nodejs.org/" target="_blank">Node</a>. run <code>npm install</code> and the required packages for the Dannel dev tools will be downloaded to the <samp>node_modules</samp> directory.</p>
+                            <pre class="prettyprint">npm install <span class="uk-text-gray-60">--unsafe-perm</span></pre>
+                            <p class="uk-text-meta">NB: If you are a Mac user add <samp>sudo</samp> before every command.</p>
+                            <p class="uk-text-meta">NB: If the npm installation failed due to permissions use <samp>--unsafe-perm</samp> command to install as admin.</p>
+                            <p class="uk-margin-large-top@m">When you want to customize or view template use the command line below so while dev mode is running all files in the pages, scss and js folders are monitored for changes, which will inject updated CSS or cause a refresh in <a href="https://vitejs.dev/" target="_blank">ViteJs</a>.</p>
+                            <pre class="prettyprint">npm run dev</pre>
+                            <p class="uk-margin-large-top@m">After you've finished customizing your template, it's time to build your production version, which you will find in a folder called <samp>/dist/</samp></p>
+                            <pre class="prettyprint">npm run build</pre>
+                            <p class="uk-margin-large-top@m"><b>Optional</b>: If you want to know the external output of the scss files use the command line below for debugging:</p>
+                            <pre class="prettyprint">npm run css:debug</pre>
+                            <hr class="uk-margin-large">
+                            <h2 id="folder-structure" class="uk-h3 uk-margin-medium-bottom"># Package contents</h2>
+                            <p>Pages are named according to their purpose, and you can open any of the files in your browser to see it in action, or modify the markup to suit your needs.</p>
+                            <p>For more info about each folder instructions mouseover on each path:</p>
+                            <ul class="uk-list uk-list-disc tooltip-hint">
+                                <li><code data-uk-tooltip="title: Ready to use for production purpose.; pos: right;">dist/</code></li>
+                                <li><code data-uk-tooltip="title: A concise documentation outlining installation, configuration, and customization procedures.; pos: right;">docs/</code></li>
+                                <li>
+                                    <code data-uk-tooltip="title: The main development file.; pos: right;">src/</code>
+                                    <ul class="uk-list uk-list-hyphen">
+                                        <li><code data-uk-tooltip="title: Contains all of the assets referenced in the html pages.; pos: right;">pages/</code></li>
+                                        <li>
+                                            <code data-uk-tooltip="title: Contains all of the assets referenced in the html pages.; pos: right;">assets/</code>
+                                            <ul class="uk-list uk-list-hyphen">
+                                                <li>
+                                                    <code data-uk-tooltip="title: Contains the source for all UIkit3 and template css. ; pos: right;">scss/</code>
+                                                    <ul class="uk-list uk-list-circle">
+                                                        <li><code data-uk-tooltip="title: The core framework files.; pos: right;">core/</code></li>
+                                                        <li>
+                                                            <code data-uk-tooltip="title: The core template files.; pos: right;">theme/</code>
+                                                            <ul class="uk-list uk-list-hyphen">
+                                                                <li><code data-uk-tooltip="title: This overrides core config to fits template stylesheet.; pos: right;">common/</code></li>
+                                                                <li><samp data-uk-tooltip="title: A place for you to add your own custom CSS rules to keep them separate from the core template files, which aids updating.; pos: right;">custom/</samp></li>
+                                                                <li><code data-uk-tooltip="title: A custom scss rules for current template.; pos: right;">template/</code></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><code data-uk-tooltip="title: Contains the source for all UIkit3 and template javascript.; pos: right;">js/</code></li>
+                                                <li><code data-uk-tooltip="title: Contains locally imported fonts and icons.; pos: right;">css/</code></li>
+                                                <li><code data-uk-tooltip="title: Contains local fonts and icons.; pos: right;">fonts/</code></li>
+                                                <li><code data-uk-tooltip="title: All the images used in the template are contained here.; pos: right;">images/</code></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <hr class="uk-margin-large">
+                            <h2 id="markup" class="uk-h4 uk-margin-medium-bottom"># HTML Markup</h2>
+                            <p>The HTML markup of Dannel.</p>
+                            <pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; class=&quot;studio-agency uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-40&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;Dannel.&lt;/title&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;page description here&quot;&gt;
+
+        &lt;link rel=&quot;preload&quot; href=&quot;../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff&quot; as=&quot;font&quot; type=&quot;font/woff&quot; crossorigin&gt;
+        &lt;link rel=&quot;preload&quot; href=&quot;../assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff&quot; as=&quot;font&quot; type=&quot;font/woff&quot; crossorigin&gt;
+        &lt;link rel=&quot;preload&quot; href=&quot;../assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff&quot; as=&quot;font&quot; type=&quot;font/woff&quot; crossorigin&gt;
+        &lt;link rel=&quot;preload&quot; href=&quot;../assets/fonts/brand-icons/brand-icons.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;
+        &lt;link rel=&quot;preload&quot; href=&quot;https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css&quot; as=&quot;style&quot;&gt;
+        &lt;link rel=&quot;preload&quot; href=&quot;https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css&quot; as=&quot;style&quot;&gt;
+        &lt;link rel=&quot;preload&quot; href=&quot;../assets/scss/theme/main.scss&quot; as=&quot;style&quot;&gt;
+
+        &lt;script src=&quot;../assets/js/app-head.js&quot;&gt;&lt;/script&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/scss/theme/main.scss&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        // Body markup here..
+
+        &lt;!-- Initiat Scripts --&gt;
+        &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;../assets/js/responsive-uk-attr.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;../assets/js/app.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;../assets/js/swiper-helper.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;../assets/js/typed-helper.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;../assets/js/anime-helper.js&quot;&gt;&lt;/script&gt;
+        &lt;script defer src=&quot;../assets/js/anime-helper-defined-timelines.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </pre>
+                            <hr class="uk-margin-large">
+                            <h2 id="plugins" class="uk-h4 uk-margin-medium-bottom"># Plugins</h2>
+                            <p>An overview of the custom configured plugins supplied with Dannel.</p>
+                            <h3 class="uk-h4 uk-text-info uk-margin-large-top"><a href="https://swiperjs.com/swiper-api" target="_blank">Swiper Js</a></h3>
+                            <p>We made it easy to deal with and even responsive to different screens using breakpoints.</p>
+                            <br>
+                            <b>Basic usage:</b>
+                            <p>To configure <b>SwiperJs</b>, use the <code>data-swiper</code> attribute and use the built-in options that are explained in the table below.</p>
+                            <pre class="prettyprint">
+&lt;div class=&quot;swiper-container&quot; <span style="color: #f0506f;">data-swiper</span>=&quot;<span><span style="color: royalblue;">items:</span> <span style="color: gray;">3</span>; <span style="color: royalblue;">dots:</span> <span style="color: gray;">.swiper-pagination</span>;</span>&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+        &lt;div class=&quot;swiper-slide&quot;&gt;Slide 1&lt;/div&gt;
+        &lt;div class=&quot;swiper-slide&quot;&gt;Slide 2&lt;/div&gt;
+        &lt;div class=&quot;swiper-slide&quot;&gt;Slide 3&lt;/div&gt;
+    &lt;/div&gt;
+
+    <span style="color:#999">&lt;!-- Add Pagination --&gt;</span>
+    &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+    
+    <span style="color:#999">&lt;!-- Add Arrows --&gt;</span>
+    &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                            <br>
+                            <b>Responsive:</b>
+                            <p>We have custom configured responsive control using breakpoints <code>data-swiper-{breakpoint}</code>, the available breakpoints: <code>s</code>, <code>m</code>, <code>l</code> and <code>xl</code>.</p>
+                            <pre class="prettyprint">
+&lt;div class=&quot;swiper-container&quot; <span style="color: #f0506f;">data-swiper</span>=&quot;<span><span style="color: royalblue;">items:</span> <span style="color: gray;">1</span>; <span style="color: royalblue;">center:</span> <span style="color: gray;">true</span>;</span>&quot; <span style="color: #f0506f;">data-swiper-m</span>=&quot;<span><span style="color: royalblue;">items:</span> <span style="color: gray;">3</span>; <span style="color: royalblue;">center:</span> <span style="color: gray;">false</span>;</span>&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+        &lt;div class=&quot;swiper-slide&quot;&gt;Slide 1&lt;/div&gt;
+        &lt;div class=&quot;swiper-slide&quot;&gt;Slide 2&lt;/div&gt;
+        &lt;div class=&quot;swiper-slide&quot;&gt;Slide 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                            <br>
+                            <p class="uk-text-bold">Buil-in Options:</p>
+                            <div class="uk-overflow-auto">
+                                <table class="uk-table uk-table-divider uk-text-small uk-margin-medium-bottom">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Option</th>
+                                            <th scope="col">Value</th>
+                                            <th scope="col">Default</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>items</code></td>
+                                            <td><samp>number | 'auto'</samp></td>
+                                            <td><code>1</code></td>
+                                            <td>number of slides per view.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>sets</code></td>
+                                            <td><samp>number</samp></td>
+                                            <td><code>1</code></td>
+                                            <td>Set numbers of slides to define and enable group sliding.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>active</code></td>
+                                            <td><samp>number</samp></td>
+                                            <td><code>0</code></td>
+                                            <td>Index number of initial slide.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>connect</code></td>
+                                            <td><samp>string</samp></td>
+                                            <td><code>null</code></td>
+                                            <td>Connet two sliders via css class selector.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>gap</code></td>
+                                            <td><samp>number</samp></td>
+                                            <td><code>48</code></td>
+                                            <td>Distance between slides in px.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>center</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>false</code></td>
+                                            <td>If <samp>true</samp>, then active slide will be centered, not always on the left side.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>center-bounds</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>false</code></td>
+                                            <td>If <samp>true</samp>, then active slide will be centered without adding gaps at the beginning and end of slider.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>dots</code></td>
+                                            <td><samp>string</samp></td>
+                                            <td><code>.swiper-dotnav</code></td>
+                                            <td>String with CSS selector or HTML element of the container with pagination.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>dots-type</code></td>
+                                            <td><samp>string</samp></td>
+                                            <td><code>bullets</code></td>
+                                            <td>String with type of pagination. Can be <ins>'bullets'</ins>, <ins>'fraction'</ins>, <ins>'progressbar'</ins> or <ins>'custom'</ins>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>dots-click</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>true</code></td>
+                                            <td>If <samp>true</samp> then clicking on pagination button will cause transition to appropriate slide. Only for bullets pagination type.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>next</code></td>
+                                            <td><samp>string</samp></td>
+                                            <td><code>.swiper-next</code></td>
+                                            <td>String with CSS selector or HTML element of the element that will work like <ins>'next'</ins> button after click on it.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>prev</code></td>
+                                            <td><samp>string</samp></td>
+                                            <td><code>.swiper-prev</code></td>
+                                            <td>String with CSS selector or HTML element of the element that will work like <ins>'prev'</ins> button after click on it.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>disable-class</code></td>
+                                            <td><samp>string</samp></td>
+                                            <td><code>uk-invisible</code></td>
+                                            <td>CSS class name added to navigation button when it becomes disabled.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>auto-height</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>false</code></td>
+                                            <td>Set to <samp>true</samp> and slider wrapper will adapt its height to the height of the currently active slide.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>autoplay</code></td>
+                                            <td><samp>number</samp></td>
+                                            <td><code>3000</code></td>
+                                            <td>Activate autoplay and set a delay between transitions (in ms). If this parameter is not specified, auto play will be disabled.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>autoplay-init</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>true</code></td>
+                                            <td>Set to false and autoplay will not be disabled after user interactions (swipes), it will be restarted every time after interaction.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>offset</code></td>
+                                            <td><samp>number</samp></td>
+                                            <td><code>0</code></td>
+                                            <td>Add (in px) additional slide offset in the end of the container (after all slides).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>fade</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>false</code></td>
+                                            <td>Enables slides cross fade.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>As you can see, we have shortened some useful options according to their meaning. If you do not find one of the options here, know that it has not been shortened and you should use the default option found in the <a href="https://swiperjs.com/swiper-api" target="_blank">documentation</a> for this plugin.</p>
+                            <h3 class="uk-h4 uk-text-info uk-margin-2xlarge-top"><a href="https://mattboldt.com/demos/typed-js/" target="_blank">Typed Js</a></h3>
+                            <p>To configure <b>TypedJs</b>, use the <code>data-typed</code> attribute and it's options.</p>
+                            <br>
+                            <b>Basic usage:</b>
+                            <pre class="prettyprint">
+&lt;span data-typed=&quot;typeSpeed: 80; backSpeed: 50; backDelay: 1500; shuffle: false&quot;&gt;
+    &lt;span&gt;portfolio&lt;/span&gt;
+    &lt;span&gt;studio&lt;/span&gt;
+    &lt;span&gt;agency&lt;/span&gt;
+    &lt;span&gt;creative&lt;/span&gt;
+&lt;/span&gt;</pre>
+                            <br>
+                            <p class="uk-text-bold">Options:</p>
+                            <p>You can find all options on TypedJs <a href="http://mattboldt.github.io/typed.js/docs/" target="_blank">documentation</a>.</p>
+                            <h3 class="uk-h4 uk-text-info uk-margin-2xlarge-top"><a href="https://animejs.com/documentation/" target="_blank">Anime Js</a></h3>
+                            <p>To configure <b>AnimeJs</b>, use the <code>data-anime</code> attribute and it's options or our built-in options below.</p>
+                            <br>
+                            <b>Basic usage:</b>
+                            <pre class="prettyprint">
+&lt;div <span style="color: #f0506f;">data-anime</span>=&quot;<span style="color: royalblue;">translateX:</span> <span style="color: gray;">250</span>; <span style="color: royalblue;">scale:</span> <span style="color: gray;">2</span>; <span style="color: royalblue;">rotate:</span> <span style="color: gray;">1turn</span>; <span style="color: royalblue;">onclick:</span> <span style="color: gray;">true</span>;&quot;&gt;
+    Animate me
+&lt;/div&gt;</pre>
+                            <br>
+                            <p class="uk-text-bold">Buit-in Options:</p>
+                            <div class="uk-overflow-auto">
+                                <table class="uk-table uk-table-divider uk-text-small uk-margin-medium-bottom">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Option</th>
+                                            <th scope="col">Value</th>
+                                            <th scope="col">Default</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>onclick</code></td>
+                                            <td><samp>boolean</samp> <samp>string</samp></td>
+                                            <td><code>false</code> <code>alternate || restart</code></td>
+                                            <td>Start animation when element clicked.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>onhover</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>false</code></td>
+                                            <td>Start animation when element hovered.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>onview</code></td>
+                                            <td><samp>boolean</samp> <samp>number</samp></td>
+                                            <td><code>false</code> <code>0</code></td>
+                                            <td>Start animation when it's on viewport. You can set an offset in px for ex: <samp>100</samp> or <samp>-100</samp>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>autoplay</code></td>
+                                            <td><samp>boolean</samp></td>
+                                            <td><code>true</code></td>
+                                            <td>Autoplay animation when element it's on viewport.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>You can find all other options on AnimeJs <a href="https://animejs.com/documentation/" target="_blank">documentation</a>.</p>
+                            <hr class="uk-margin-large">
+                            <h2 id="customize" class="uk-h3 uk-margin-medium-bottom"># Customizing CSS</h2>
+                            <b>SCSS Method:</b>
+                            <p>The most streamlined way to make edits and additions to the template CSS is to use the provided <code>user-config.scss</code>, <code>user.scss</code> and <code>user-init.scss</code> files located in the <samp>/assets/scss/template/custom</samp> folder.</p>
+                            <p>When used in conjunction with the provided dev tools, your custom CSS is included in <code>main.scss</code> and overrides the default template style.</p>
+                            <p>This is the preferred method as your changes are kept separate from the core framework or template files. By separating your CSS edits into their own files, you can easily overwrite all of the default template SCSS files when you update the template.</p>
+                            <p>If you need to add CSS for additional components or other needs, simply edit <code>user.scss</code> and add any SCSS or CSS you require.</p>
+                            <br>
+                            <b>CSS Method:</b>
+                            <p>If you prefer to work with Dannel as a static source without the aid of Node, Gulp and Sass, you will need to add custom CSS through a separate CSS file.</p>
+                            <p>We have provided a blank <code>custom.css</code> file in the <samp>assets/css</samp> folder. To make your custom CSS active, you will need to add the following line after <code>main.scss</code> is referenced in the <code>&lt;head&gt;</code> of each page:</p>
+                            <pre class="prettyprint">&lt;link href=&quot;./assets/css/custom.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;</pre>
+                            <hr class="uk-margin-large">
+                            <h2 id="update" class="uk-h3 uk-margin-medium-bottom"># Updating template</h2>
+                            <p>Updates will be released periodically to add <b>new features</b>, <b>provide fixes</b> where necessary and <b>maintain compatibility</b>.</p>
+                            <p>Most often, the updated files are javascript or CSS and your project should need little adjustment in order to stay up to date.</p>
+                            <p>The <a href="#changelog" data-uk-toggle="">changelog</a> is be updated with each release and lists the updated files.</p>
+                            <p>To bring your project up to date with the latest version of Dannel, simply download the latest version, unzip the files and replace the old version in your project with the updated version of each Dannel file.</p>
+                            <p>Any breaking changes that affect compatibility with older versions of Dannel will be noted, and further instructions on updating will be provided in the changelog.</p>
+                            <hr class="uk-margin-large">
+                            <h2 class="uk-h3 uk-margin-medium-bottom">How to get support</h2>
+                            <p>We provide support for <b>bugfixes</b> and <b>guidance</b> on using the template <b class="uk-text-success">including</b>:</p>
+                            <ul class="uk-list uk-list-hyphen">
+                                <li>Availability to answer questions.</li>
+                                <li>Answering technical questions about template's features</li>
+                                <li>Assistance with reported bugs and issues.</li>
+                                <li>Help with included 3rd party assets.</li>
+                            </ul>
+                            <p class="uk-margin-large-top">However, item support does <b class="uk-text-danger">not include</b>:</p>
+                            <ul class="uk-list uk-list-hyphen">
+                                <li>Customization services.</li>
+                                <li>Installation services.</li>
+                            </ul>
+                            <p>In case you need help installing or customizing your template according to your requirements, we are pleased to provide this service by <a href="mailto:hi.unistudio@gmail.com">contacting</a> us via e-mail.</p>
+                            <p>This type of service may charge you a fee depending on your requirements.</p>
+                            <hr class="uk-margin-large">
+                            <h2 class="uk-h3 uk-margin-medium-bottom">Giving Feedback</h2>
+                            <p>We strive to improve our products and we rely on feedback from our customers.</p>
+                            <p>Please feel free to share any feedback about Dannel we will appreciate it!</p>
+                            <p class="uk-margin-large uk-text-large">Thank you for being one of our <b>valued customers</b>!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Initiat Scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="assets/js/docs.js"></script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+// Services
+.uni-services {
+    // Cards
+    &-card {
+        transition: 250ms ease;
+
+        &-icon>* {
+            display: inline-flex;
+            border: 1px solid var(--color-gray-20);
+            padding: 16px;
+            transition: 250ms ease;
+        }
+
+        .uk-button {
+            > * {
+                transition: transform 700ms cubic-bezier(0.17, 0.67, 0, 1.01) 0s;
+            }
+        }
+
+        &.uk-active,
+        &:hover {
+            background-color: var(--color-primary) !important;
+
+            .uni-services-card-icon>*,
+            .uni-services-card-title {
+                border-color: rgba(white, 0.5) !important;
+                color: var(--color-gray-10) !important;
+            }
+
+            .uni-services-card-desc {
+                color: white !important;
+            }
+
+            .uk-button.uni-services-card-btn {
+                transition: 250ms ease;
+                background-color: rgba(white, 0.2) !important;
+                color: var(--color-gray-10) !important;
+            }
+
+            .uk-button > * {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+// Start project modal
+#start-project {
+    z-index: 99999 !important;
+}

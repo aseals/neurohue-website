@@ -1,0 +1,48 @@
+.uni-header {
+    .uk-logo {
+        transition: color 200ms ease-in;
+    }
+    .uk-navbar-nav {
+        > li {
+            > a {
+                position: relative;
+                line-height: inherit;
+                &::after {
+                    content: "";
+                    width: 4px;
+                    height: 4px;
+                    background-color: var(--color-primary);
+                    border-radius: 100%;
+                    position: absolute;
+                    top: calc(100% - 4px);
+                    left: 50%;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    transition: 300ms ease;
+                }
+            }
+            &:hover > a {
+                color: inherit;
+                opacity: .7;
+            }
+            &.uk-active {
+                > a::after {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    .uk-scrollnav-header {
+        &.uk-active {
+            background-color: rgba(#ffffff, 0.95);
+        }
+    }
+    &-navbar {
+        &.uk-sticky.uk-active {
+            .uk-navbar {
+                padding: 0 !important;
+            }
+        }
+    }
+}

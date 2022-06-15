@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zxx" class="studio-agency dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About — Dannel.studio</title>
+        <meta name="description" content="page description here">
+        <meta name="theme-color" content="#181818">
+
+        <!-- preload styles -->
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+
+        <!-- <link rel="preload" href="../assets/scss/theme/main.scss" as="style"> -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" as="style">
+
+        <!-- preload scripts -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="../assets/scss/theme/main.scss">
+
+        <!-- include scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script src="../assets/js/swiper-helper.js"></script>
+        <script src="../assets/js/uikit-components.js"></script>
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle>
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport>
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center">
+                            <li><a href="works.html">work.</a></li>
+                            <li><a href="about.html">about.</a></li>
+                            <li><a href="mailto:hey@dannel.studio">contact.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrap: Studio Demo -->
+        <div class="wrap">
+
+            <!-- Hero -->
+            <div class="uni-studio-hero uk-panel uk-overflow-hidden">
+
+                <!-- Hero: Header -->
+                <header class="uni-studio-header uni-header uk-position-top">
+                    <div class="uni-header-navbar uk-sticky-transparent" data-uk-sticky="top: 120; animation: uk-animation-slide-top;">
+                        <div class="uk-container uk-container-expand">
+                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                                <div class="uk-navbar-top uk-flex-center">
+                                    <div class="uk-navbar-left">
+                                        <div class="uk-navbar-item">
+                                            <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">dannel.studio</a>
+                                            <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">D.</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-navbar-right uk-flex-right">
+                                        <div class="uk-navbar-item">
+                                            <a class="uni-menu-trigger" href="#uni-menu-modal" aria-label="Menu" data-uk-toggle></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Hero: Content -->
+                <div class="uni-studio-hero uk-panel">
+                    <div class="uk-container uk-container-small">
+                        <div class="uk-section-2xlarge uk-panel uk-flex-column uk-flex-center" data-uk-height-viewport="offset-top: true;">
+                            <h2 class="uk-h2 suk-h1@s uk-heading-hero@m dark:uk-text-gray-10">Hey, we’re dannel.</h2>
+                            <p class="uk-text-2xlarge@m uk-margin-large-top@m">We're a digital product and ux agency in Leeds, we do branding strategy, design, and development across all platforms.</p>
+                            <a href="#uni-studio-services" class="uk-link-underline uk-text-large@m uk-margin-xlarge-top@m" data-uk-scroll="offset: 128;">
+                                <i class="material-icons-round">south</i>
+                                <span>Our approach</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proccess -->
+            <div class="uni-studio-proccess uk-section uk-section-2xlarge@m uk-padding-remove-top uk-background-white dark:uk-background-gray-100" id="uni-studio-services">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid uk-grid-row-3xlarge@m uk-child-width-1-1" data-uk-grid>
+                        <div>
+                            <div class="uk-grid-large uk-flex-between uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-5-10@m">
+                                    <div class="uk-panel uk-overflow-hidden">
+                                        <canvas width="472" height="472"></canvas>
+                                        <img class="uk-cover" src="../assets/images/studio-service-01.jpg" alt="image" data-uk-cover loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="uk-width-4-10@m uk-flex-first@m">
+                                    <div class="uk-panel">
+                                        <h3 class="uk-h5 uk-h3@m uk-text-normal uk-text-muted uk-margin-remove uk-width-small@m">01.</h3>
+                                        <h2 class="uk-h3 uk-h1@m uk-width-small@m dark:uk-text-gray-10">User Experience</h2>
+                                        <p class="uk-text-large uk-margin-top uk-margin-medium-top@m">Sed nunc consectetur eget at. Amet, at tempor commodo ipsum. Magna sed bibendum netus pellentesque vel tortor, proin.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-large uk-flex-between uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-5-10@m">
+                                    <div class="uk-panel uk-overflow-hidden">
+                                        <canvas width="472" height="472"></canvas>
+                                        <img class="uk-cover" src="../assets/images/studio-service-02.jpg" alt="image" data-uk-cover loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="uk-width-4-10@m">
+                                    <div class="uk-panel">
+                                        <h3 class="uk-h5 uk-h3@m uk-text-normal uk-text-muted uk-margin-remove uk-width-small@m">02.</h3>
+                                        <h3 class="uk-h3 uk-h1@m uk-width-small@m dark:uk-text-gray-10">Brand Experience</h3>
+                                        <p class="uk-text-large uk-margin-top uk-margin-medium-top@m">Pharetra, amet turpis dictum proin fermentum. Eros, tristique elit platea vestibulum, purus. Amet auctor quis enim leo eleifend.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-large uk-flex-between uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-5-10@m">
+                                    <div class="uk-panel uk-overflow-hidden">
+                                        <canvas width="472" height="472"></canvas>
+                                        <img class="uk-cover" src="../assets/images/studio-service-01.jpg" alt="image" data-uk-cover loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="uk-width-4-10@m uk-flex-first@m">
+                                    <div class="uk-panel">
+                                        <h3 class="uk-h5 uk-h3@m uk-text-normal uk-text-muted uk-margin-remove uk-width-small@m">03.</h3>
+                                        <h3 class="uk-h3 uk-h1@m uk-width-small@m dark:uk-text-gray-10">Web Development</h3>
+                                        <p class="uk-text-large uk-margin-top uk-margin-medium-top@m">Tempus placerat nulla id pharetra enim condimentum mi. Arcu vestibulum, facilisi ornare mi, dui feugiat lacus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capabilites -->
+            <div class="uni-studio-capabilites uk-section-large uk-section-2xlarge@m uk-background-gray-10 dark:uk-background-gray-100" id="capabilities">
+                <div class="uk-container uk-container-small">
+                    <h2 class="uk-h4 uk-h3@m dark:uk-text-gray-10">Capabilites</h2>
+                    <div class="uk-grid uk-grid-column-large@m uk-grid-row-large uk-grid-row-2xlarge@m uk-child-width-1-3@m uk-margin-2xlarge-top@m" data-uk-grid>
+                        <div class="uk-panel">
+                            <h4 class="uk-h4 uk-margin-remove dark:uk-text-gray-10">Strategic Planing</h4>
+                            <ul class="uk-list uk-list-xsmall uk-text-large@m uk-margin-medium-top@m">
+                                <li>Customer Experience</li>
+                                <li>Consumer Insights</li>
+                                <li>Product + Service Vision</li>
+                                <li>Go-To-Market Planning</li>
+                                <li>Data Science + Analytics</li>
+                            </ul>
+                        </div>
+                        <div class="uk-panel">
+                            <h4 class="uk-h4 uk-margin-remove dark:uk-text-gray-10">User Experience</h4>
+                            <ul class="uk-list uk-list-xsmall uk-text-large@m uk-margin-medium-top@m">
+                                <li>Experience Strategy</li>
+                                <li>eCommerce + Websites</li>
+                                <li>Digital Product + Services</li>
+                                <li>Design Systems</li>
+                                <li>iOS + Android Applications</li>
+                            </ul>
+                        </div>
+                        <div class="uk-panel">
+                            <h4 class="uk-h4 uk-margin-remove dark:uk-text-gray-10">Brand Experience</h4>
+                            <ul class="uk-list uk-list-xsmall uk-text-large@m uk-margin-medium-top@m">
+                                <li>Identity + Positioning</li>
+                                <li>Visual Language</li>
+                                <li>Design Production</li>
+                                <li>Brand Messaging</li>
+                                <li>Brand Guidelines</li>
+                            </ul>
+                        </div>
+                        <div class="uk-panel">
+                            <h4 class="uk-h4 uk-margin-remove dark:uk-text-gray-10">Technology</h4>
+                            <ul class="uk-list uk-list-xsmall uk-text-large@m uk-margin-medium-top@m">
+                                <li>Technical Discovery</li>
+                                <li>Full-Stack Development</li>
+                                <li>CMS Implementation</li>
+                                <li>Quality Assurance</li>
+                                <li>Interactive Prototyping</li>
+                            </ul>
+                        </div>
+                        <div class="uk-panel">
+                            <h4 class="uk-h4 uk-margin-remove dark:uk-text-gray-10">Content Creation</h4>
+                            <ul class="uk-list uk-list-xsmall uk-text-large@m uk-margin-medium-top@m">
+                                <li>Content Strategy</li>
+                                <li>Art Direction</li>
+                                <li>Photography</li>
+                                <li>Video Production</li>
+                                <li>3D / Motion Graphics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clients -->
+            <div class="uni-studio-clients uk-section-medium uk-section-2xlarge@m uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-40">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid uk-grid-large@m uk-flex-between uk-child-width-1-3 uk-child-width-auto uk-text-center" data-uk-grid>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-01.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-02.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-03.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-04.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-05.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-06.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-07.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-08.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-02.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-01.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cta / Footer -->
+            <footer class="uni-studio-footer uk-background-gray-10 dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-section-medium uk-section-2xlarge@m uk-flex-column uk-flex-between uk-height-1-1 dark:uk-background-gray-100">
+                        <div>
+                            <div class="uk-width-large@m dark:uk-text-gray-10">
+                                <h2 class="uk-h1 uk-heading-hero@m dark:uk-text-gray-10">Let’s talk.</h2>
+                                <div class="uk-margin-medium-top@m">
+                                    <a href="mailto:hey@dannel.studio" class="uk-link-expand uk-link-underline uk-text-large@m">
+                                        <i class="material-icons-round">arrow_forward</i>
+                                        <span>hey@dannel.studio</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                            <div class="uk-grid uk-grid-match uk-grid-medium uk-flex-between" data-uk-grid>
+                                <div class="uk-width-4-10@m">
+                                    <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-whild-width-1-2@m uk-flex-between" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="works.html">
+                                                        <span>Works</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html#capabilities">
+                                                        <span>Services</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html">
+                                                        <span>About</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="uk-flex-right@m">
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://dribbble.com/unistudioco">
+                                                        <span>Dribbble</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://instagram.com/unistudioco">
+                                                        <span>Instagram</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://twitter.com/unistudioco">
+                                                        <span>Twitter</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1 uk-width-expand@m uk-flex-first@m">
+                                    <div class="uk-panel uk-height-1-1 uk-flex-column uk-flex-between uk-text-large@m dark:uk-text-gray-10">
+                                        <p class="uk-margin-remove">
+                                            Office 14 New Station St, <br>
+                                            Leeds, LS1 5DL
+                                        </p>
+                                        <p class="uk-margin-large-top">2021 © Dannel Studio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- include scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+        <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>

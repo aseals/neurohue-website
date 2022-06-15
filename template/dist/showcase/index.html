@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zxx" class="showcase uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dannel.showcase</title>
+        <meta name="description" content="page description here">
+        <meta name="theme-color" content="#181818">
+
+        <!-- preload styles -->
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+
+        <!-- <link rel="preload" href="../assets/css/theme/showcase.min.css" as="style"> -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" as="style">
+
+        <!-- preload scripts -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="../assets/css/theme/showcase.min.css">
+
+        <!-- include scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script src="../assets/js/swiper-helper.js"></script>
+        <script src="../assets/js/uikit-components.js"></script>
+    </head>
+    <body>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport>
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center">
+                            <li><a href="mailto:hey@dannel.studio">Say hello?</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrap: Showcase Demo -->
+        <div class="wrap">
+
+            <!-- Showcases -->
+            <div class="uni-showcase-hero swiper-parent uk-panel uk-overflow-hidden">
+
+                <!-- Showcase: Header -->
+                <header class="uni-showcase-header uni-header uk-position-top" style="z-index: 9999">
+                    <div class="uni-header-navbar uk-sticky-transparent" data-uk-sticky="top: 120; animation: uk-animation-slide-top;">
+                        <div class="uk-container uk-container-expand">
+                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                                <div class="uk-navbar-top uk-flex-center">
+                                    <div class="uk-navbar-left">
+                                        <div class="uk-navbar-item">
+                                            <a class="uk-logo dark:uk-text-gray-10" href="index.html">D.</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-navbar-right uk-flex-right">
+                                        <div class="uk-navbar-item">
+                                            <div class="darkmode-trigger uk-margin-xsmall-right uk-margin-large-right@m" data-darkmode-toggle>
+                                                <label class="switch">
+                                                    <span class="sr-only">Toggle Darkmode</span>
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-navbar-item">
+                                            <a class="uni-menu-trigger" href="#uni-menu-modal" aria-label="Menu" data-uk-toggle></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Showcase: Content -->
+                <div class="swiper-container swiper-hide-wrap uk-container uk-container-small uk-overflow-unset uk-flex-middle" data-uk-swiper data-swiper="items: 1.4; gap: 48; mousewheel: true; loop: true; center: true; freeMode: false; dots: .swiper-pagination; dots-type: fraction; dots-click: true;" data-swiper-m="items: 2; gap: 128;" data-uk-height-viewport>
+                    <div class="swiper-wrapper uk-flex-middle uk-text-center">
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="532"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/architect-01.jpg" alt="Stuttgart Architect" data-uk-cover loading="eager"> <a href="single-project.html" class="uk-position-cover" aria-label="Stuttgart Architect"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Stuttgart Architect</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="432"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-03.jpg" alt="Dr Pepper" data-uk-cover loading="eager"> <a href="single-project.html" class="uk-position-cover" aria-label="Dr Pepper"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Dr Pepper</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="532"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/interior-design-07.jpg" alt="Note x Vester" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Note x Vester"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Note x Vester</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="432"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-06.jpg" alt="Samrio" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Samrio"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Samrio</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="532"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/architect-03.jpg" alt="Dubai Architect" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Dubai Architect"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Dubai Architect</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="432"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-02.jpg" alt="Bick's" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Bick's"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Bick's</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="532"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/interior-design-01.jpg" alt="Journey" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Journey"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Journey</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uni-studio-works-item uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="432" height="432"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-08.jpg" alt="Fieldset" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Fieldset"></a>
+                                </div>
+                                <h4 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Fieldset</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase: Footer -->
+                <footer class="uk-section-small uk-section-medium@m uk-position-bottom uk-position-z-index uk-text-small" style="z-index: 9999">
+                    <div class="uk-container uk-container-expand">
+                        <div class="uk-grid uk-grid-row-xsmall uk-flex-between uk-flex-middle uk-flex-center uk-text-center" data-uk-grid>
+                            <div class="uk-width-auto@s">
+                                <div class="swiper-pagination uk-text-semibold uk-position-relative uk-text-gray-80 uk-margin-medium-bottom uk-margin-remove-bottom@m"></div>
+                            </div>
+                            <div class="uk-width-auto@s uk-flex-1@m uk-flex-center uk-flex-right@s">
+                                <ul class="uk-subnav uk-flex-center">
+                                    <li><a href="https://facebook.com/unistudioco">fb.</a></li>
+                                    <li><a href="https://dribbble.com/unistudioco">dr.</a></li>
+                                    <li><a href="https://behance.net/unistudioco">be.</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-auto@s uk-flex-1@m uk-flex-center uk-flex-left@s uk-flex-first@s">
+                                <p class="uk-margin-remove">2021 © Dannel Showcase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- include scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+        <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>

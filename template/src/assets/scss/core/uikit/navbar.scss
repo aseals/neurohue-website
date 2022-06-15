@@ -1,0 +1,108 @@
+.uk-navbar {
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(70px - (15px * 2));
+    padding: 15px 0;
+
+    // Items, Nav, Toggle shared styles
+    &-item,
+    &-nav,
+    &-toggle {
+        min-height: initial;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: normal;
+        letter-spacing: normal;
+        text-transform: initial;
+        color: inherit;
+    }
+
+    // Override center alignment
+    &-center:not(:only-child) {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        z-index: auto;
+    }
+
+    // Top, Bottom navbar
+    > div {
+        display: flex;
+        align-items: center;
+    }
+
+    &-bottom {
+        padding-top: 15px;
+        .uk-navbar-nav {
+            overflow: auto;
+            white-space: nowrap;
+            &::-webkit-scrollbar {
+                display: none; /* Chrome, Safari and Opera */
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+        }
+    }
+
+    // Divider columns
+    &-divider-column {
+        > .uk-navbar-bottom {
+            position: relative;
+            margin-top: 15px;
+            &::before {
+                content: "";
+                display: flex !important;
+                border-top: 1px solid rgba(0, 0, 0, .05);
+                position: absolute;
+                top: 0;
+                left: calc(15px / 2);
+                right: calc(15px / 2);
+            }
+        }
+    }
+
+    // Navigation
+    &-nav {
+        > li {
+            > a {
+                min-height: initial;
+                font-family: inherit;
+                font-size: inherit;
+                font-weight: normal;
+                letter-spacing: normal;
+                text-transform: initial;
+                color: inherit;
+                padding: 0;
+                line-height: var(--header-navbar-height);
+                &:not(:last-child):after {
+                    content: "\e5cf";
+                    font-family: "Material Icons";
+                    position: relative;
+                    top: 1px;
+                }
+            }
+            +li {
+                margin-left: 15px;
+            }
+        }
+        &-large {
+            > li+li {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    // Desktop spacing
+    @include sm {
+        // Divider
+        &-divider-column {
+            > .uk-navbar-bottom {
+                &::before {
+                    left: 15px;
+                    right: 15px;
+                }
+            }
+        }
+    }
+}

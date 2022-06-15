@@ -1,0 +1,154 @@
+@use "sass:map";
+
+/* UIKit: Button */
+.uk-button {
+    box-sizing: border-box;
+    position: relative;
+    display: var(--button-display);
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--button-font-typeface, sans-serif);
+    font-weight: var(--button-font-weight, 700);
+    text-transform: var(--button-font-transform, initial);
+    font-size: var(--button-font-size);
+    height: var(--button-height);
+    padding: var(--button-padding);
+    margin: var(--button-margin);
+    color: var(--color-gray-100);
+    text-align: var(--button-align-text);
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: var(--button-font-spacing, normal);
+    vertical-align: top;
+    border-radius: var(--button-border-radius, 5px);
+    outline: none;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.53, 0.21, 0, 1);
+
+    &:hover,
+    &:focus {
+        color: inherit;
+    }
+
+    &-justify {
+        justify-content: space-between;
+        padding: 0 calc(var(--sizes-button-medium-padding) / 2) !important;
+    }
+
+    &-link {
+        color: var(--colors-button-primary);
+        padding: 0 !important;
+        &:hover,
+        &:focus {
+            color: var(--colors-button-primary-hover);
+        }
+    }
+
+    &-text {
+        padding: 0 !important;
+        &::before {
+            display: none;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 20%;
+            left: 0;
+            background-color: var(--color-primary);
+            transform-origin: bottom right;
+            transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        }
+        &:hover {
+            color: var(--color-primary);
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+
+    &-icon {
+        width: var(--button-height);
+        padding: 0 !important;
+    }
+
+    &:disabled {
+        background-color: var(--color-gray-40);
+        color: var(--color-gray-100);
+        border: 0;
+        opacity: .4;
+        cursor: not-allowed;
+    }
+
+    &.uk-border-circle {
+        border-radius: 50%;
+    }
+
+    > * + * {
+        margin-left: 8px;
+    }
+}
+
+// Color Modifier
+@each $name, $color in map.get($config, 'colors', 'accent') {
+    .uk-button-#{$name} {
+        background-color: var(--colors-button-#{$name});
+        color: white !important;
+        border: var(--button-border-width) solid var(--button-border-color);
+        &:hover,
+        &:focus {
+            background-color: var(--colors-button-#{$name}-hover);
+            color: white !important;
+        }
+        &-invert {
+            background-color: white !important;
+            color: var(--colors-button-#{$name}) !important;
+            border: white !important;
+            &:hover,
+            &:focus {
+                background-color: var(--colors-button-#{$name}) !important;
+                border-color: var(--colors-button-#{$name}) !important;
+                color: white !important;
+            }
+        }
+        &.uk-button-outline {
+            background-color: transparent;
+            border: 1px solid var(--colors-button-#{$name});
+            color: var(--colors-button-#{$name}) !important;
+            &:hover,
+            &:focus {
+                background-color: var(--colors-button-#{$name});
+                color: white !important;
+            }
+        }
+        &.uk-button-alt {
+            background-color: var(--color-#{$name}-10);
+            color: var(--colors-button-#{$name}) !important;
+            &:hover {
+                background-color: var(--color-#{$name});
+                color: white !important;
+            }
+        }
+    }
+}
+
+// Size Modifier
+@include wrap-media() using ($bp) {
+    @each $name, $size in map.get($config, 'sizes', 'button') {
+        .uk-button-#{$name}#{$bp} {
+            font-size: var(--sizes-button-#{$name}-text);
+            height: var(--sizes-button-#{$name}-height);
+            padding: 0 var(--sizes-button-#{$name}-padding);
+            &.uk-button-icon {
+                width: var(--sizes-button-#{$name}-height) !important;
+            }
+            &.uk-button-justify {
+                padding: 0 calc(var(--sizes-button-#{$name}-padding) / 2) !important;
+            }
+        }
+    }
+}

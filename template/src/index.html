@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zxx" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dannel.</title>
+        <meta name="description" content="A well crafted, creative, minimal and modern designed Digital &amp; Studio Agency Template.">
+        <meta name="theme-color" content="#181818">
+
+        <!-- preload styles -->
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+
+        <!-- <link rel="preload" href="assets/scss/theme/freelancer.scss" as="style"> -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" as="style">
+
+        <!-- preload scripts -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js" as="script">
+        <link rel="preload" href="assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" as="script">
+        <link rel="preload" href="assets/js/app.js" as="script">
+        <link rel="preload" href="assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="assets/scss/theme/freelancer.scss">
+
+        <!-- include scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script src="assets/js/swiper-helper.js"></script>
+        <script src="assets/js/uikit-components.js"></script>
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle>
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport>
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center" data-uk-scrollspy-nav="closest: li; offset: 40; scroll: true;">
+                            <li><a href="#overview">Overview.</a></li>
+                            <li><a href="#demos">Demos.</a></li>
+                            <li><a href="#features">Features.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+
+            <!-- Hero -->
+            <div id="overview" class="uni-hero uk-panel uk-overflow-hidden">
+
+                <!-- Hero: Header -->
+                <header class="uni-header uk-position-top">
+                    <div class="uni-header-navbar uk-scrollnav-header" data-uk-sticky="top: 120; animation: uk-animation-slide-top">
+                        <div class="uk-container uk-container-large">
+                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                                <div class="uk-navbar-top">
+                                    <div class="uk-navbar-left uk-flex-1">
+                                        <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">Dannel.</a>
+                                        <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">D.</a>
+                                    </div>
+                                    <div class="uk-navbar-center">
+                                        <ul class="uk-navbar-nav uk-visible@m dark:uk-text-gray-10" data-uk-scrollspy-nav="closest: li; offset: 100; scroll: true;">
+                                            <li><a href="#overview">Overview</a></li>
+                                            <li><a href="#demos">Demos</a></li>
+                                            <li><a href="#features">Features</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                        <div class="uk-navbar-item uk-visible@m">
+                                            <a href="https://ui8.net/unistudio/products/dannel-template" rel="noopener" target="_blank" class="uk-link-expand uk-link-underline dark:uk-text-white">
+                                                <span class="uk-text-bold">More Details</span>
+                                                <i class="material-icons-round">arrow_forward</i>
+                                            </a>
+                                        </div>
+                                        <div class="uk-navbar-item uk-hidden@m">
+                                            <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle aria-label="Menu"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Hero: Content -->
+                <div class="uk-panel uk-overflow-hidden uk-position-z-index">
+                    <div class="uk-container">
+                        <div class="uk-panel uk-section-2xlarge uk-flex-middle@s" data-uk-height-viewport="media: @s;">
+                            <div class="uk-width-2xlarge@m uk-margin-auto uk-text-center">
+                                <h2 class="uk-h2 uk-h1@s uk-heading-hero@m uk-margin-medium-top uk-margin-remove-bottom dark:uk-text-gray-10">
+                                    Setup your <br>
+                                    <span class="uk-text-gray-70">
+                                        <span data-typed="typeSpeed: 80; backSpeed: 50; backDelay: 1500; shuffle: false">
+                                            <span>portfolio</span>
+                                            <span>studio</span>
+                                            <span>agency</span>
+                                            <span>creative</span>
+                                        </span>
+                                    </span>
+                                    website <br>
+                                    with dannel.
+                                </h2>
+                                <a href="#demos" class="uk-button uk-button-large uk-button-primary uk-margin-medium-top uk-margin-xlarge-top@m dark:uk-button-primary-invert" data-uk-scroll="offset: 164;">
+                                    <span class="material-icons-round">arrow_downward</span>
+                                    <span>Explore demos</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demos -->
+            <div id="demos" class="uni-demos uk-section-large uk-section-2xlarge uk-padding-remove-top">
+                <div class="uk-container">
+                    <div class="uk-grid uk-grid-medium uk-grid-2xlarge@m uk-child-width-1-2@m uk-position-relative uk-position-z-index" data-uk-grid>
+                        <div>
+                            <div class="uk-card">
+                                <div class="uk-panel uk-overflow-hidden uk-card-default">
+                                    <canvas width="1440" height="789"></canvas>
+                                    <img class="uk-cover" src="assets/images/demos/screenshots/freelancer/index.png" alt="Freelancer &mdash; Onepage" data-uk-cover loading="lazy"> <a href="freelancer/index.html" class="uk-position-cover" aria-label="Freelancer — Onepage"></a>
+                                </div>
+                                <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                    <div>
+                                        <div class="uk-panel">
+                                            <span class="uk-text-overline">Onepage</span>
+                                            <h3 class="uk-h4 uk-h3@m uk-margin-xsmall-top">
+                                                <a href="freelancer/index.html" class="uk-link-reset">Freelancer.</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="freelancer/index.html" class="uk-link-underline dark:uk-text-gray-10 uk-visible@m">
+                                            <i class="material-icons-round uk-icon-small" style="transform: rotate(-45deg)">arrow_forward</i>
+                                            <span>Live preview</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="uk-panel uk-overflow-hidden uk-card-default">
+                                    <canvas width="1440" height="789"></canvas>
+                                    <img class="uk-cover" src="assets/images/demos/screenshots/studio/index.png" alt="Studio Agency &mdash; Multipage" data-uk-cover loading="lazy"> <a href="studio/index.html" class="uk-position-cover" aria-label="Studio Agency — Multipage"></a>
+                                </div>
+                                <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                    <div>
+                                        <div class="uk-panel">
+                                            <span class="uk-text-overline">Multipage</span>
+                                            <h3 class="uk-h4 uk-h3@m uk-margin-xsmall-top">
+                                                <a href="studio/index.html" class="uk-link-reset">Studio Agency.</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="studio/index.html" class="uk-link-underline dark:uk-text-gray-10 uk-visible@m">
+                                            <i class="material-icons-round uk-icon-small" style="transform: rotate(-45deg)">arrow_forward</i>
+                                            <span>Live preview</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="uk-panel uk-overflow-hidden uk-card-default">
+                                    <canvas width="1440" height="789"></canvas>
+                                    <img class="uk-cover" src="assets/images/demos/screenshots/minimal/index.png" alt="Minimal Portfolio &mdash; Multipage" data-uk-cover loading="lazy"> <a href="minimal/index.html" class="uk-position-cover" aria-label="Minimal Portfolio — Multipage"></a>
+                                </div>
+                                <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                    <div>
+                                        <div class="uk-panel">
+                                            <span class="uk-text-overline">Multipage</span>
+                                            <h3 class="uk-h4 uk-h3@m uk-margin-xsmall-top">
+                                                <a href="minimal/index.html" class="uk-link-reset">Minimal Portfolio.</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="minimal/index.html" class="uk-link-underline dark:uk-text-gray-10 uk-visible@m">
+                                            <i class="material-icons-round uk-icon-small" style="transform: rotate(-45deg)">arrow_forward</i>
+                                            <span>Live preview</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="uk-panel uk-overflow-hidden uk-card-default">
+                                    <canvas width="1440" height="789"></canvas>
+                                    <img class="uk-cover" src="assets/images/demos/screenshots/showcase/index.png" alt="Showcase Portfolio &mdash; Onepage" data-uk-cover loading="lazy"> <a href="showcase/index.html" class="uk-position-cover" aria-label="Showcase Portfolio — Onepage"></a>
+                                </div>
+                                <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                    <div>
+                                        <div class="uk-panel">
+                                            <span class="uk-text-overline">Onepage</span>
+                                            <h3 class="uk-h4 uk-h3@m uk-margin-xsmall-top">
+                                                <a href="showcase/index.html" class="uk-link-reset">Showcase Portfolio.</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="showcase/index.html" class="uk-link-underline dark:uk-text-gray-10 uk-visible@m">
+                                            <i class="material-icons-round uk-icon-small" style="transform: rotate(-45deg)">arrow_forward</i>
+                                            <span>Live preview</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="uk-panel uk-overflow-hidden uk-card-default">
+                                    <canvas width="1440" height="789"></canvas>
+                                    <img class="uk-cover" src="assets/images/demos/screenshots/agency/index.png" alt="Digital Agency &mdash; Onepage" data-uk-cover loading="lazy"> <a href="#" class="uk-position-cover uk-overlay uk-overlay-default" aria-label="Digital Agency — Onepage"></a>
+                                    <div class="uk-position-cover uk-flex-center uk-flex-middle uk-text-center uk-h2 uk-margin-remove uk-text-gray-100 uk-opacity-40">Coming soon</div>
+                                </div>
+                                <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                    <div>
+                                        <div class="uk-panel">
+                                            <span class="uk-text-overline">Onepage</span>
+                                            <h3 class="uk-h4 uk-h3@m uk-margin-xsmall-top">Digital Agency.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card">
+                                <div class="uk-panel uk-overflow-hidden uk-card-default">
+                                    <canvas width="1440" height="789"></canvas>
+                                    <img class="uk-cover" src="assets/images/demos/screenshots/showcase/index.png" alt="Grid Portfolio &mdash; Onepage" data-uk-cover loading="lazy"> <a href="#" class="uk-position-cover uk-overlay uk-overlay-default" aria-label="Grid Portfolio — Onepage"></a>
+                                    <div class="uk-position-cover uk-flex-center uk-flex-middle uk-text-center uk-h2 uk-margin-remove uk-text-gray-100 uk-opacity-40">Coming soon</div>
+                                </div>
+                                <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                    <div>
+                                        <div class="uk-panel">
+                                            <span class="uk-text-overline">Multipage</span>
+                                            <h3 class="uk-h4 uk-h3@m uk-margin-xsmall-top">Grid Portfolio.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inner Pages -->
+            <div id="inner-pages" class="uni-inner-pages uk-overflow-hidden uk-section-large uk-section-2xlarge uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-10 uk-dark">
+                <div class="uk-container">
+                    <h2 class="uk-h2 uk-h1@m uk-margin-remove">Inner Pages.</h2>
+                    <div class="swiper-container uk-margin-large-top uk-margin-2xlarge-top@m uk-overflow-unset" data-swiper="items: 1.2; gap: 16; center: true; center-bounds: true; dots: .swiper-pagination; prev: .swiper-button-prev; next: .swiper-button-next; mousewheel: true;" data-swiper-m="items: 3; gap: 64;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/agency/404.png" alt="agency &mdash; 404" width="689" height="1000" loading="lazy"> <a href="agency/404.html" class="uk-position-cover" aria-label="404 - Agency."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="agency/404.html" class="uk-link-reset">404 - Agency.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/agency/privacy.png" alt="agency &mdash; privacy" width="689" height="1000" loading="lazy"> <a href="agency/privacy.html" class="uk-position-cover" aria-label="Privacy - Agency."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="agency/privacy.html" class="uk-link-reset">Privacy - Agency.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/agency/single-post.png" alt="agency &mdash; single post" width="689" height="1000" loading="lazy"> <a href="agency/single-post.html" class="uk-position-cover" aria-label="Single post - Agency."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="agency/single-post.html" class="uk-link-reset">Single post - Agency.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/agency/single-service.png" alt="agency &mdash; single service" width="689" height="1000" loading="lazy"> <a href="agency/single-service.html" class="uk-position-cover" aria-label="Single service - Agency."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="agency/single-service.html" class="uk-link-reset">Single service - Agency.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/agency/terms.png" alt="agency &mdash; terms" width="689" height="1000" loading="lazy"> <a href="agency/terms.html" class="uk-position-cover" aria-label="Terms - Agency."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="agency/terms.html" class="uk-link-reset">Terms - Agency.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/freelancer/404.png" alt="freelancer &mdash; 404" width="689" height="1000" loading="lazy"> <a href="freelancer/404.html" class="uk-position-cover" aria-label="404 - Freelancer."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="freelancer/404.html" class="uk-link-reset">404 - Freelancer.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/freelancer/privacy.png" alt="freelancer &mdash; privacy" width="689" height="1000" loading="lazy"> <a href="freelancer/privacy.html" class="uk-position-cover" aria-label="Privacy - Freelancer."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="freelancer/privacy.html" class="uk-link-reset">Privacy - Freelancer.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/freelancer/single-post.png" alt="freelancer &mdash; single post" width="689" height="1000" loading="lazy"> <a href="freelancer/single-post.html" class="uk-position-cover" aria-label="Single post - Freelancer."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="freelancer/single-post.html" class="uk-link-reset">Single post - Freelancer.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/freelancer/single-service.png" alt="freelancer &mdash; single service" width="689" height="1000" loading="lazy"> <a href="freelancer/single-service.html" class="uk-position-cover" aria-label="Single service - Freelancer."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="freelancer/single-service.html" class="uk-link-reset">Single service - Freelancer.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/freelancer/terms.png" alt="freelancer &mdash; terms" width="689" height="1000" loading="lazy"> <a href="freelancer/terms.html" class="uk-position-cover" aria-label="Terms - Freelancer."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="freelancer/terms.html" class="uk-link-reset">Terms - Freelancer.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/about.png" alt="minimal &mdash; about" width="689" height="1000" loading="lazy"> <a href="minimal/about.html" class="uk-position-cover" aria-label="About - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/about.html" class="uk-link-reset">About - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/blog.png" alt="minimal &mdash; blog" width="689" height="1000" loading="lazy"> <a href="minimal/blog.html" class="uk-position-cover" aria-label="Blog - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/blog.html" class="uk-link-reset">Blog - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/contact.png" alt="minimal &mdash; contact" width="689" height="1000" loading="lazy"> <a href="minimal/contact.html" class="uk-position-cover" aria-label="Contact - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/contact.html" class="uk-link-reset">Contact - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/privacy.png" alt="minimal &mdash; privacy" width="689" height="1000" loading="lazy"> <a href="minimal/privacy.html" class="uk-position-cover" aria-label="Privacy - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/privacy.html" class="uk-link-reset">Privacy - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/projects.png" alt="minimal &mdash; projects" width="689" height="1000" loading="lazy"> <a href="minimal/projects.html" class="uk-position-cover" aria-label="Projects - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/projects.html" class="uk-link-reset">Projects - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/single-post.png" alt="minimal &mdash; single post" width="689" height="1000" loading="lazy"> <a href="minimal/single-post.html" class="uk-position-cover" aria-label="Single post - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/single-post.html" class="uk-link-reset">Single post - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/single-project.png" alt="minimal &mdash; single project" width="689" height="1000" loading="lazy"> <a href="minimal/single-project.html" class="uk-position-cover" aria-label="Single project - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/single-project.html" class="uk-link-reset">Single project - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/minimal/terms.png" alt="minimal &mdash; terms" width="689" height="1000" loading="lazy"> <a href="minimal/terms.html" class="uk-position-cover" aria-label="Terms - Minimal."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="minimal/terms.html" class="uk-link-reset">Terms - Minimal.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/showcase/single-project.png" alt="showcase &mdash; single project" width="689" height="1000" loading="lazy"> <a href="showcase/single-project.html" class="uk-position-cover" aria-label="Single project - Showcase."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="showcase/single-project.html" class="uk-link-reset">Single project - Showcase.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/studio/about.png" alt="studio &mdash; about" width="689" height="1000" loading="lazy"> <a href="studio/about.html" class="uk-position-cover" aria-label="About - Studio."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="studio/about.html" class="uk-link-reset">About - Studio.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/studio/single-post.png" alt="studio &mdash; single post" width="689" height="1000" loading="lazy"> <a href="studio/single-post.html" class="uk-position-cover" aria-label="Single post - Studio."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="studio/single-post.html" class="uk-link-reset">Single post - Studio.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/studio/single-project.png" alt="studio &mdash; single project" width="689" height="1000" loading="lazy"> <a href="studio/single-project.html" class="uk-position-cover" aria-label="Single project - Studio."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="studio/single-project.html" class="uk-link-reset">Single project - Studio.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/studio/single-service.png" alt="studio &mdash; single service" width="689" height="1000" loading="lazy"> <a href="studio/single-service.html" class="uk-position-cover" aria-label="Single service - Studio."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="studio/single-service.html" class="uk-link-reset">Single service - Studio.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-card">
+                                    <div class="uk-panel uk-overflow-hidden uk-card-default"><img src="assets/images/demos/screenshots/studio/works.png" alt="studio &mdash; works" width="689" height="1000" loading="lazy"> <a href="studio/works.html" class="uk-position-cover" aria-label="Works - Studio."></a></div>
+                                    <div class="uk-panel uk-margin-top uk-grid uk-flex-between uk-flex-bottom" data-uk-grid>
+                                        <div>
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h5 uk-h4@m uk-margin-xsmall-top"><a href="studio/works.html" class="uk-link-reset">Works - Studio.</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next uk-text-white uk-offset-large-right"></div>
+                        <div class="swiper-button-prev uk-text-white uk-offset-large-left"></div>
+                    </div>
+                    <div class="uk-text-center uk-margin-large-top uk-margin-3xlarge-top@m">
+                        <p class="uk-text-overline">More coming soon..</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div id="features" class="uni-features swiper-parent uk-overflow-hidden uk-section-large uk-section-2xlarge@m uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-10">
+                <div class="uk-container">
+                    <h2 class="uk-h2 uk-h1@m uk-margin-remove">Key Features.</h2>
+                    <div class="uk-grid uk-grid-2xlarge uk-grid-match uk-child-width-1-3@m uk-margin-2xlarge-top" data-uk-grid>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">devices</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Responsive design</h3>
+                                <p class="uk-margin-medium-top">With a mobile focus, you can rest assured that every pixel will respond as it should no matter if your visitors are on a desktop, tablet or phone.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">design_services</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Design &amp; code quality</h3>
+                                <p class="uk-margin-medium-top">Improper and depercated code can break layouts, corrupt data or worse. With Dannel, nothing but the latest version of HTML5 and CSS3 are used.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">tune</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Easy to customize</h3>
+                                <p class="uk-margin-medium-top">You can easily customize colors, backgrounds &amp; fonts via Sass files. We have created eash Sass file for each component to customize your template as you want easily.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">brightness_medium</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Dark/Light mode</h3>
+                                <p class="uk-margin-medium-top">Each section and element has light and dark mode with easy control via our core classes and comes with auto adjust mode.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">dashboard</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Modern layouts</h3>
+                                <p class="uk-margin-medium-top">A Creative, Unique and carefully crafted design by experience designer with great attention to details, flexibility and performance.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">insights</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Flexibility</h3>
+                                <p class="uk-margin-medium-top">A combination of unique features make this template the most flexible, productivity oriented and simple to use template ever built.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">grading</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Well documented</h3>
+                                <p class="uk-margin-medium-top">We believe that when the docs good and clear, this means not going through installation and modifications issues, which means more satisfaction.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">restart_alt</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Frequent updates</h3>
+                                <p class="uk-margin-medium-top">We will update our product permanently by adding new features, layouts and demos or by fixing bugs and issues.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <i class="material-icons-round uk-icon-large">support_agent</i>
+                                <h3 class="uk-h4 uk-margin-small-top">Outstanding support</h3>
+                                <p class="uk-margin-medium-top">UniStudio's support experience is second to none. We not only provide a superior product... we'll be with you every step of the way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div id="testimonials" class="uni-testimonials swiper-parent uk-overflow-hidden uk-section-large uk-section-2xlarge@m uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-10">
+                <div class="uk-container">
+                    <header class="uk-flex-between">
+                        <h2 class="uk-h2 uk-h1@m uk-margin-remove">What clients said.</h2>
+                        <div class="uk-flex-middle uk-visible@m">
+                            <a href="#" class="uni-nav-swiper swiper-prev material-icons uk-icon-medium uk-link">west</a>
+                            <a href="#" class="uni-nav-swiper swiper-next material-icons uk-icon-medium uk-link uk-margin-small-left">east</a>
+                        </div>
+                    </header>
+                    <div class="swiper-container uk-margin-large-top uk-margin-2xlarge-top@m uk-overflow-unset uk-overflow-hide@m" data-swiper="items: 1.1; gap: 16; center: true; center-bounds: true; disable-class: uk-disable; loop: false;" data-swiper-m="items: 2; gap: 32; center: false; center-bounds: false;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="uk-panel uk-card-small uk-card-medium@m uk-background-gray-10 dark:uk-background-white-5">
+                                    <ul class="uk-nav uk-flex uk-flex-middle" style="line-height: 1">
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li class="uk-margin-xsmall-left uk-text-small dark:uk-text-gray-40 uk-visible@m">for Design Quality</li>
+                                    </ul>
+                                    <p class="uk-margin-large-top@m uk-margin-remove-bottom">“Value for money ! You may get at this same price a lot of themes which have tons of pages instead in this theme pages are limited but very elegant & well designed Great Job!”</p>
+                                    <div class="uk-panel uk-margin-large-top">
+                                        <b>QuickCoder</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-panel uk-card-small uk-card-medium@m uk-background-gray-10 dark:uk-background-white-5">
+                                    <ul class="uk-nav uk-flex uk-flex-middle" style="line-height: 1">
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li class="uk-margin-xsmall-left uk-text-small dark:uk-text-gray-40 uk-visible@m">for Design Quality</li>
+                                    </ul>
+                                    <p class="uk-margin-large-top@m uk-margin-remove-bottom">I really like the minimal design. Support is also great. He's a great person.</p>
+                                    <div class="uk-panel uk-margin-large-top">
+                                        <b>Ieer</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-panel uk-card-small uk-card-medium@m uk-background-gray-10 dark:uk-background-white-5">
+                                    <ul class="uk-nav uk-flex uk-flex-middle" style="line-height: 1">
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li class="uk-margin-xsmall-left uk-text-small dark:uk-text-gray-40 uk-visible@m">for Design Quality</li>
+                                    </ul>
+                                    <p class="uk-margin-large-top@m uk-margin-remove-bottom">Awesome theme with wonderful UI. Simple to customize.</p>
+                                    <div class="uk-panel uk-margin-large-top">
+                                        <b>Vale Creative</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="uk-panel uk-card-small uk-card-medium@m uk-background-gray-10 dark:uk-background-white-5">
+                                    <ul class="uk-nav uk-flex uk-flex-middle" style="line-height: 1">
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li><i class="material-icons-round">star</i></li>
+                                        <li class="uk-margin-xsmall-left uk-text-small dark:uk-text-gray-40 uk-visible@m">for Code Quality</li>
+                                    </ul>
+                                    <p class="uk-margin-large-top@m uk-margin-remove-bottom">Well designed and clean code. Support is quick as well.</p>
+                                    <div class="uk-panel uk-margin-large-top">
+                                        <b>EnergyFreak</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer / cta -->
+            <footer class="uni-cta-footer uk-overflow-hidden uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40 uk-dark">
+                <div class="uk-container">
+                    <div>
+                        <div class="uk-section-large uk-section-2xlarge@m uk-width-2xlarge uk-margin-auto uk-text-center">
+                            <h2 class="uk-h1 uk-heading-hero@m">Turn your brand into a great one.</h2>
+                            <a href="https://ui8.net/unistudio/products/dannel-template" class="uk-button uk-button-large uk-button-primary uk-button-invert uk-margin-top uk-margin-large-top@m" style="transition: initial">
+                                <span class="material-icons-round">arrow_downward</span>
+                                <span>Download Now</span>
+                            </a>
+                        </div>
+
+                        <hr class="uk-margin-remove dark:uk-border-white-10">
+
+                        <div class="uk-section">
+                            <div class="uk-grid uk-grid-medium@m uk-flex-between" data-uk-grid>
+                                <div class="uk-width-auto@m">
+                                    <div class="uk-grid uk-child-width-1-2 uk-child-width-auto@m">
+                                        <div>
+                                            <a href="docs/index.html" class="uk-link-underline">Documentation</a>
+                                        </div>
+                                        <div>
+                                            <a href="main/mailto:hi.unistudio@gmail.com" rel="noopener" target="_blank" class="uk-link-underline">Support</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand@m uk-flex-first@m">
+                                    <span>2021 © <a href="https://unistudio.co" class="uk-link-reset">UniStudio</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- include scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="assets/js/app.js"></script>
+        <script defer src="assets/js/typed-helper.js"></script>
+        <script defer src="assets/js/anime-helper.js"></script>
+        <script defer src="assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zxx" class="studio-agency dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Works — Dannel.studio</title>
+        <meta name="description" content="page description here">
+        <meta name="theme-color" content="#181818">
+
+        <!-- preload styles -->
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+
+        <!-- <link rel="preload" href="../assets/scss/theme/main.scss" as="style"> -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" as="style">
+
+        <!-- preload scripts -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="../assets/scss/theme/main.scss">
+
+        <!-- include scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script src="../assets/js/swiper-helper.js"></script>
+        <script src="../assets/js/uikit-components.js"></script>
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle>
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport>
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center">
+                            <li><a href="works.html">work.</a></li>
+                            <li><a href="about.html">about.</a></li>
+                            <li><a href="mailto:hey@dannel.studio">contact.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrap: Studio Demo -->
+        <div class="wrap">
+
+            <!-- Hero: Header -->
+            <header class="uni-studio-header uni-header">
+                <div class="uni-header-navbar uk-sticky-transparent" data-uk-sticky="top: 120; animation: uk-animation-slide-top;">
+                    <div class="uk-container uk-container-expand">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                            <div class="uk-navbar-top uk-flex-center">
+                                <div class="uk-navbar-left">
+                                    <div class="uk-navbar-item">
+                                        <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">dannel.studio</a>
+                                        <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">D.</a>
+                                    </div>
+                                </div>
+                                <div class="uk-navbar-right uk-flex-right">
+                                    <div class="uk-navbar-item">
+                                        <a class="uni-menu-trigger" href="#uni-menu-modal" aria-label="Menu" data-uk-toggle></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Featured works -->
+            <div class="uk-section-medium uk-section-2xlarge@m uk-panel uk-overflow-hidden uk-background-white dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <h2 class="uk-h3 uk-h1@m uk-margin-remove dark:uk-text-gray-10">Works</h2>
+                    <div class="uk-panel uk-overflow-hidden uk-margin-medium-top uk-margin-3xlarge-top@m">
+                        <div class="uk-grid-large@s uk-grid-row-3xlarge@m uk-child-width-1-2@s uk-child-width-auto@m uk-flex-between uk-flex-middle uk-grid" data-uk-grid>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="552"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/architect-03.jpg" alt="Stuttgart Architect" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Stuttgart Architect"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Stuttgart Architect</a>
+                                </h3>
+                            </div>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="368"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-05.jpg" alt="Fieldset" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Fieldset"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Fieldset</a>
+                                </h3>
+                            </div>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="368"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-02.jpg" alt="Dr Pepper" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Dr Pepper"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Dr Pepper</a>
+                                </h3>
+                            </div>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="552"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/interior-design-02.jpg" alt="Note x Vester" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Note x Vester"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Note x Vester</a>
+                                </h3>
+                            </div>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="552"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/architect-01.jpg" alt="Stuttgart Architect" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Stuttgart Architect"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Stuttgart Architect</a>
+                                </h3>
+                            </div>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="368"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-08.jpg" alt="Fieldset" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Fieldset"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Fieldset</a>
+                                </h3>
+                            </div>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="368"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-03.jpg" alt="Dr Pepper" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Dr Pepper"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Dr Pepper</a>
+                                </h3>
+                            </div>
+                            <div class="uni-studio-works-item uk-text-center uk-animation-toggle-scale">
+                                <div class="uni-studio-works-item-image uk-panel uk-overflow-hidden">
+                                    <canvas width="368" height="552"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/interior-design-07.jpg" alt="Note x Vester" data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="Note x Vester"></a>
+                                </div>
+                                <h3 class="uni-studio-works-item-title uk-h5 uk-h4@m uk-text-normal uk-margin-small-top uk-margin-top@m uk-margin-remove-bottom">
+                                    <a href="single-project.html">Note x Vester</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More works -->
+            <div class="uni-studio-works-more uk-section-large uk-section-2xlarge@m uk-background-gray-10 dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <h3 class="uk-h3 uk-margin-remove dark:uk-text-gray-10">More works</h3>
+                    <div class="uk-grid uk-grid-row-xlarge@m uk-child-width-1-1 uk-margin-large-top uk-margin-2xlarge-top@m" data-uk-grid>
+                        <div>
+                            <div class="uk-grid-xsmall uk-grid-medium@m uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-2-10@m">
+                                    <span class="uk-text-large@m uk-text-muted dark:uk-text-gray-40">2021</span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 uk-h2@m uk-text-normal">
+                                        <a href="single-project.html" class="dark:uk-text-gray-10" data-image-hover-revealer="../assets/images/projects/brands-03.jpg">Dr Pepper</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-xsmall uk-grid-medium@m uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-2-10@m">
+                                    <span class="uk-text-large@m uk-text-muted dark:uk-text-gray-40">2021</span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 uk-h2@m uk-text-normal">
+                                        <a href="single-project.html" class="dark:uk-text-gray-10" data-image-hover-revealer="../assets/images/projects/architect-01.jpg">Stuttgart Architect</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-xsmall uk-grid-medium@m uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-2-10@m">
+                                    <span class="uk-text-large@m uk-text-muted dark:uk-text-gray-40">2020</span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 uk-h2@m uk-text-normal">
+                                        <a href="single-project.html" class="dark:uk-text-gray-10" data-image-hover-revealer="../assets/images/projects/interior-design-03.jpg">Zendesk Interior</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-xsmall uk-grid-medium@m uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-2-10@m">
+                                    <span class="uk-text-large@m uk-text-muted dark:uk-text-gray-40">2019</span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 uk-h2@m uk-text-normal">
+                                        <a href="single-project.html" class="dark:uk-text-gray-10" data-image-hover-revealer="../assets/images/projects/brands-01.jpg">Burda</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-xsmall uk-grid-medium@m uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-2-10@m">
+                                    <span class="uk-text-large@m uk-text-muted dark:uk-text-gray-40">2018</span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 uk-h2@m uk-text-normal">
+                                        <a href="single-project.html" class="dark:uk-text-gray-10" data-image-hover-revealer="../assets/images/projects/architect-03.jpg">Dubai Exotic</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-xsmall uk-grid-medium@m uk-flex-middle uk-grid" data-uk-grid>
+                                <div class="uk-width-2-10@m">
+                                    <span class="uk-text-large@m uk-text-muted dark:uk-text-gray-40">2017</span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 uk-h2@m uk-text-normal">
+                                        <a href="single-project.html" class="dark:uk-text-gray-10" data-image-hover-revealer="../assets/images/projects/interior-design-06.jpg">Workspacy</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clients -->
+            <div class="uni-studio-clients uk-section-medium uk-section-2xlarge@m uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-40">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid uk-grid-large@m uk-flex-between uk-child-width-1-3 uk-child-width-auto uk-text-center" data-uk-grid>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-01.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-02.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-03.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-04.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-05.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-06.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-07.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-08.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-02.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                        <div>
+                            <img width="120" src="../assets/images/brands/brand-01.svg" alt="Brand" data-uk-svg loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cta / Footer -->
+            <footer class="uni-studio-footer uk-background-gray-10 dark:uk-background-gray-100">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-section-medium uk-section-2xlarge@m uk-flex-column uk-flex-between uk-height-1-1 dark:uk-background-gray-100">
+                        <div>
+                            <div class="uk-width-large@m dark:uk-text-gray-10">
+                                <h2 class="uk-h1 uk-heading-hero@m dark:uk-text-gray-10">Let’s talk.</h2>
+                                <div class="uk-margin-medium-top@m">
+                                    <a href="mailto:hey@dannel.studio" class="uk-link-expand uk-link-underline uk-text-large@m">
+                                        <i class="material-icons-round">arrow_forward</i>
+                                        <span>hey@dannel.studio</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                            <div class="uk-grid uk-grid-match uk-grid-medium uk-flex-between" data-uk-grid>
+                                <div class="uk-width-4-10@m">
+                                    <div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-whild-width-1-2@m uk-flex-between" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="works.html">
+                                                        <span>Works</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html#capabilities">
+                                                        <span>Services</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="about.html">
+                                                        <span>About</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="uk-flex-right@m">
+                                            <ul class="uk-list uk-list-large">
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://dribbble.com/unistudioco">
+                                                        <span>Dribbble</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://instagram.com/unistudioco">
+                                                        <span>Instagram</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-underline dark:uk-text-gray-10" href="https://twitter.com/unistudioco">
+                                                        <span>Twitter</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1 uk-width-expand@m uk-flex-first@m">
+                                    <div class="uk-panel uk-height-1-1 uk-flex-column uk-flex-between uk-text-large@m dark:uk-text-gray-10">
+                                        <p class="uk-margin-remove">
+                                            Office 14 New Station St, <br>
+                                            Leeds, LS1 5DL
+                                        </p>
+                                        <p class="uk-margin-large-top">2021 © Dannel Studio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- include scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+        <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>

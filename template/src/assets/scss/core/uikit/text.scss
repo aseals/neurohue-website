@@ -1,0 +1,29 @@
+@use "sass:map";
+
+/* UIKit: Text */
+
+@mixin text-color-modifier {
+    @each $name, $color in map.get($config, 'colors', 'text') {
+        @if $name == "muted" {
+            &#{if($name != '', '-' + $name, '')},
+            &-meta {
+                color: var(--color-gray-80) !important;
+            }
+        } @else {
+            &#{if($name != '', '-' + $name, '')} {
+                color: var(--colors-text-#{$name}) !important;
+            }
+        }
+    }
+}
+
+.uk-text {
+    &-inherit {
+        color: inherit;
+    }
+    &-vertical {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+    @include text-color-modifier;
+}

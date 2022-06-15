@@ -1,0 +1,15 @@
+@use "sass:map";
+.uk-label {
+    font-size: .750rem;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: unset;
+    padding: 4px 8px;
+    border-radius: var(--radius);
+    // Color Modifier
+    @each $name, $color in map.get($config, 'colors', 'accent') {
+        &-#{$name} {
+            background-color: var(--color-#{$name});
+        }
+    }
+}
