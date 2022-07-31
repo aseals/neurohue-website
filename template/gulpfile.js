@@ -1,6 +1,6 @@
 // Dependencies
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const del = require('del');
 const terser = require('gulp-terser');
 const replace = require('gulp-replace');
