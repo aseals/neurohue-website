@@ -179,21 +179,10 @@
         }
     }
 
-    &-grayscale {
-        img {
-            filter: grayscale(1);
-        }
-
-        &:hover img {
-            filter: grayscale(0);
-        }
-    }
+    
 }
 
 // Grayscale Images
-img {
-    filter: grayscale(1);
-}
 
 
 .uni-studio-works {

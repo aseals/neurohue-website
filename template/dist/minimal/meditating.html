@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zxx" class="minimal-portfolio uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>single project — dannel.minimal</title>
+        <meta name="description" content="page description here">
+        <meta name="theme-color" content="#181818">
+
+        <!-- preload styles -->
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+
+        <!-- <link rel="preload" href="../assets/css/theme/main.min.css" as="style"> -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" as="style">
+
+        <!-- preload scripts -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="../assets/css/theme/main.min.css">
+
+        <!-- include scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script src="../assets/js/swiper-helper.js"></script>
+        <script src="../assets/js/uikit-components.js"></script>
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle>
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport>
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center">
+                            <li><a href="index.html">home.</a></li>
+                            <li><a href="projects.html">projects.</a></li>
+                            <li><a href="about.html">studio.</a></li>
+                            <li><a href="blog.html">blog.</a></li>
+                            <li><a href="contact.html">contact.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+
+            <!-- Sidenavs -->
+            <div class="uni-sidenavs uk-visible@l dark:uk-text-white">
+                <div class="uk-position-left uk-flex-center uk-flex-middle">
+                    <ul class="uk-subnav uk-subnav-large" style="writing-mode: vertical-lr; transform: rotate(180deg)">
+                        <li><a href="index.html">home.</a></li>
+                        <li><a href="projects.html">projects.</a></li>
+                        <li><a href="about.html">studio.</a></li>
+                        <li><a href="blog.html">blog.</a></li>
+                        <li><a href="contact.html">contact.</a></li>
+                    </ul>
+                </div>
+                <div class="uk-position-right uk-flex-center uk-flex-middle">
+                    <ul class="uk-subnav uk-subnav-large" style="writing-mode: vertical-lr">
+                        <li><a href="https://facebook.com/unistudioco">facebook.</a></li>
+                        <li><a href="https://instagram.com/unistudioco">instagram.</a></li>
+                        <li><a href="https://dribbble.com/unistudioco">dribbble.</a></li>
+                        <li><a href="https://behance.net/unistudioco">behance.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hero -->
+            <div class="uni-hero uk-panel uk-overflow-hidden">
+
+                <!-- Hero: Header -->
+                <header class="uni-studio-header uni-header">
+                    <div class="uni-header-navbar uk-sticky-transparent" data-uk-sticky="top: 120; animation: uk-animation-slide-top;">
+                        <div class="uk-container uk-container-expand">
+                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                                <div class="uk-navbar-top uk-flex-center">
+                                    <div class="uk-navbar-left uk-flex-1">
+                                        <div class="uk-panel">
+                                            <a class="uk-logo uk-h4 uk-h3@m uk-navbar-item uk-margin-remove uk-hidden@l" href="index.html">dannel.</a>
+                                            <a class="uk-logo uk-h4 uk-h3@m uk-navbar-item uk-margin-remove uk-hidden@l uk-sticky-logo" href="index.html">d.</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-navbar-center">
+                                        <a class="uk-logo uk-h4 uk-h3@m uk-navbar-item uk-margin-remove uk-visible@l" href="index.html">dannel.minimal</a>
+                                    </div>
+                                    <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                        <div class="uk-navbar-item uk-hidden@l">
+                                            <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle><span class="sr-only">Toggle Menu</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Hero: Sticky menu -->
+                <div class="uni-sticky-menu uk-position-top-right">
+                    <div class="uk-visible@l" data-uk-sticky="top: 100vh; animation: uk-animation-slide-top;">
+                        <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle aria-label="Menu"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single project -->
+            <article class="uk-panel uk-overflow-hidden uk-section-2xlarge@m uk-padding-remove-top">
+                <div class="uk-container">
+                    <div class="uk-panel uk-overflow-hidden">
+                        <canvas class="uk-visible@m" data-uk-height-viewport="offset-bottom: 30;"></canvas>
+                        <canvas class="uk-hidden@m" data-uk-height-viewport="offset-bottom: 26;"></canvas>
+                        <img class="uk-cover" src="../assets/images/heros/minimal-single-project.jpg" alt="image" data-uk-cover loading="lazy">
+                    </div>
+
+                    <div class="uk-flex-center uk-margin-medium-top">
+                        <a class="uni-icon-wave" href="#details" data-uk-scroll="offset: 40;">
+                            <span class="material-icons-round uk-icon-medium">south</span>
+                        </a>
+                    </div>
+
+                    <div class="uk-margin-xlarge-top uk-margin-2xlarge-top@m" id="details">
+                        <div class="uk-container uk-container-small">
+                            <div class="uk-grid uk-grid-medium@m uk-flex-between" data-uk-grid>
+                                <div class="uk-width-1-3@m">
+                                    <h1 class="uk-h2">note x vestre.</h1>
+                                </div>
+                                <div class="uk-width-1-2@m">
+                                    <ul class="uk-list uk-text-large@m">
+                                        <li><span>Topic:</span> <a href="projects.html?category=interior+design">Nuerohue-Mediating Self-focused Attention in Social Networking Services </a></li>
+                                        <li><span>Project Description :</span> Mediating Self-focused Attention in Social Networking Services</li>
+                                        <li><span>Collaborators:</span> Summer Brashear (UCLA/Neurohue), Dr. Ayanna Seals (Neurohue), Lucas
+                                            Wozniak (Neurohue), Dr. Jiyoung Lee (University of Alabama)</li>
+                                        <li><span>year:</span> 2021</li>
+                                    </ul>
+                                   
+                                </div>
+                            </div>
+                            <p class="uk-text-xlarge@m uk-margin-3xlarge-top@m">
+                                Social media: is it a blessing or a curse? Years of research show that comparing ourselves to
+                                others online, otherwise known as social comparisons, has been shown to increase feelings of
+                                anxiety, depression, self-harm, and suicide, especially among our youth. At the same time, this
+                                research has yet to translate into effective solutions. When people are very aware of
+                                themselves and how they compare to others, they can begin to view themselves less as a
+                                person, and more like an object to be continuously evaluated. They begin to compare the ways
+                                they see themselves with the way they see themselves in comparison to others. This is a
+                                mechanism of self-focused attention and objective self-awareness, two measures that are
+                                assessed in the study. These mechanisms have been shown to be impacted by visual stimuli.
+                                Nuerohue is hoping to break new ground in testing whether a system of data-driven
+                                interventions in social media interfaces, that will help social media users limit their social
+                                comparisons and reduce negative emotions in real-time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="uk-grid uk-grid-medium@m uk-margin-large-top uk-margin-2xlarge-top@m" data-uk-grid>
+                        <div class="uk-width-1-1">
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas class="uk-visible@m" height="680"></canvas>
+                                <canvas class="uk-hidden@m" height="340"></canvas>
+                                <img class="uk-cover" src="../assets/images/minimal-single-project-01.jpg" alt="image" data-uk-cover loading="lazy">
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas class="uk-visible@m" height="680"></canvas>
+                                <canvas class="uk-hidden@m" height="340"></canvas>
+                                <img class="uk-cover" src="../assets/images/minimal-single-project-02.jpg" alt="image" data-uk-cover loading="lazy">
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas class="uk-visible@m" height="680"></canvas>
+                                <canvas class="uk-hidden@m" height="340"></canvas>
+                                <img class="uk-cover" src="../assets/images/minimal-single-project-03.jpg" alt="image" data-uk-cover loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                        <div class="uk-container uk-container-small">
+                            <h2>How does Nuerohue plan to use the data from this research?</h2>
+                            <p class="uk-text-xlarge@m">With this new research, Nuerohue can further demonstrate whether the design of social media
+                                contributes to mental health concerns.</p>
+                        </div>
+                    </div>
+                    <div class="uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                        <div class="uk-container uk-container-small">
+                            <h2>Data from this research will be used to evaluate the following:</h2>
+                           
+                             
+                            <p class="uk-text-xlarge@m"> The data findings from this research can help Nuerohue and other researchers develop new
+                                approaches for quantifying biases in attention, self-focused attention, and
+                                social comparisons as they relate to negative emotions during social media use.
+                                In addition to their quantitative findings, the team will be able to publicly share insights into
+                                when, why, and how the design of social media and how we interact with it are proponents of
+                                negative emotional experiences.
+                                These findings can help researchers create data-driven interaction design interventions to
+                                reverse undesired negative emotional implications of social media use.</p>
+                               
+                        </div>
+                    </div>
+
+                    <div class="uk-panel uk-overflow-hidden uk-margin-xlarge-top uk-margin-3xlarge-top@m">
+                        <canvas class="uk-visible@m" height="680"></canvas>
+                        <canvas class="uk-hidden@m" height="340"></canvas>
+                        <img class="uk-cover" src="../assets/images/minimal-single-project-04.jpg" alt="image" data-uk-cover loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Similar projects -->
+            <div class="uni-last-project uk-overflow-hidden uk-section-large uk-section-2xlarge@m uk-background-white dark:uk-background-gray-90">
+                <div class="uk-container">
+                    <div>
+                        <div>
+                            <div class="uk-grid uk-grid-column-medium uk-grid-row-small uk-flex-middle uk-flex-between" data-uk-grid>
+                                <div class="uk-width-auto@s">
+                                    <h3 class="uk-h3 uk-margin-remove">similar projects.</h3>
+                                </div>
+                                <div class="uk-width-expand@s uk-flex-right@s uk-visible@m">
+                                    <a href="projects.html" class="uk-link-underline">
+                                        <span>view all projects.</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="uk-grid uk-grid-column-medium uk-grid-row-medium uk-grid-row-2xlarge@m uk-child-width-1-4@m uk-margin-large-top uk-margin-2xlarge-top@m" data-uk-grid>
+                            <li>
+                                <div class="uk-panel uk-overflow-hidden">
+                                    <canvas width="264" height="264"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-06.jpg" alt="note x vestre." data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="note x vestre."></a>
+                                </div>
+                                <div class="uk-panel uk-margin-small-top uk-margin-top@m">
+                                    <a href="projects.html?category=branding" class="uk-text-small uk-text-muted dark:uk-text-gray-40">branding</a>
+                                    <h4 class="uk-h5 uk-margin-xsmall-top"><a href="single-project.html">note x vestre.</a></h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-overflow-hidden">
+                                    <canvas width="264" height="264"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/interior-design-08.jpg" alt="journey." data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="journey."></a>
+                                </div>
+                                <div class="uk-panel uk-margin-small-top uk-margin-top@m">
+                                    <a href="projects.html?category=interior+design" class="uk-text-small uk-text-muted dark:uk-text-gray-40">interior design</a>
+                                    <h4 class="uk-h5 uk-margin-xsmall-top"><a href="single-project.html">journey.</a></h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-overflow-hidden">
+                                    <canvas width="264" height="264"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/brands-03.jpg" alt="yoda digital." data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="yoda digital."></a>
+                                </div>
+                                <div class="uk-panel uk-margin-small-top uk-margin-top@m">
+                                    <a href="projects.html?category=branding" class="uk-text-small uk-text-muted dark:uk-text-gray-40">branding</a>
+                                    <h4 class="uk-h5 uk-margin-xsmall-top"><a href="single-project.html">yoda digital.</a></h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-panel uk-overflow-hidden">
+                                    <canvas width="264" height="264"></canvas>
+                                    <img class="uk-cover" src="../assets/images/projects/architect-01.jpg" alt="axn." data-uk-cover loading="lazy"> <a href="single-project.html" class="uk-position-cover" aria-label="axn."></a>
+                                </div>
+                                <div class="uk-panel uk-margin-small-top uk-margin-top@m">
+                                    <a href="projects.html?category=architecture" class="uk-text-small uk-text-muted dark:uk-text-gray-40">architecture</a>
+                                    <h4 class="uk-h5 uk-margin-xsmall-top"><a href="single-project.html">axn.</a></h4>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="uk-margin-xlarge-top uk-margin-2xlarge-top@m uk-hidden@m">
+                            <a href="projects.html" class="uk-link-underline">
+                                <span>view all projects.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer / cta -->
+            <footer class="uni-cta-footer uk-section-large uk-section-2xlarge@m dark:uk-background-gray-100 dark:uk-text-white">
+                <div class="uk-container">
+                    <div class="uk-grid uk-grid-medium@m" data-uk-grid>
+                        <div class="uk-width-1-1 uk-width-expand@m">
+                            <a href="contact.html">
+                                <h2 class="uk-h1 uk-heading-hero@m uk-width-small@m">
+                                    drop us <br>
+                                    a line
+                                </h2>
+                                <i class="material-icons uk-icon-2xlarge">subdirectory_arrow_right</i>
+                            </a>
+                        </div>
+                        <div class="uk-width-1-2 uk-width-2-12@m">
+                            <ul class="uk-list uk-list-large">
+                                <li><a href="projects.html">projects.</a></li>
+                                <li><a href="about.html">studio.</a></li>
+                                <li><a href="blog.html">blog.</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-1-2 uk-width-2-12@m">
+                            <ul class="uk-list uk-list-large">
+                                <li><a href="https://www.linkedin.com/jobs/">we hire.</a></li>
+                                <li><a href="https://facebook.com/unistudioco">facebook.</a></li>
+                                <li><a href="https://instagram.com/unistudioco">instagram.</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-2-12@m">
+                            <ul class="uk-list uk-list-large">
+                                <li><a href="https://dribbble.com/unistudioco">dribbble.</a></li>
+                                <li><a href="https://behance.net/unistudioco">behance.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-margin-large-top uk-margin-2xlarge-top@m">
+                        <div class="uk-grid" data-uk-grid>
+                            <div class="uk-width-1-2 uk-width-auto@m">
+                                <a href="terms.html">terms of use</a>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-auto@m">
+                                <a href="privacy.html">privacy</a>
+                            </div>
+                            <div class="uk-width-1-1 uk-width-auto@m">
+                                <span>2021 © dannel.minimal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- include scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+        <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>
